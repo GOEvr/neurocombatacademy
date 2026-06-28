@@ -1,329 +1,474 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes">
+    
     <title>NeuroCombat Academy | Capacitação Profissional em Segurança</title>
+    <meta name="description" content="Capacitação profissional baseada em neurociência, fatores humanos e experiência operacional real. Método exclusivo para elevar seu desempenho sob estresse.">
+    <meta name="keywords" content="curso de tiro, capacitação segurança, neurociência aplicada, treinamento operacional, pré-laudo, porte de arma">
+    <meta name="author" content="Nésio Augusto Ferreira - NeuroCombat Academy">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <meta name="theme-color" content="#0A0F1E">
     
-    <!-- ===== META TAGS ===== -->
-    <meta name="description" content="Capacitação profissional em segurança baseada em neurociência, fatores humanos e experiência operacional real. Curso preparatório para o Pré-Laudo de Aptidão Técnica." />
-    <meta name="keywords" content="neurociência, segurança, treinamento, combate, aptidão técnica, pré-laudo, capacitação" />
-    <meta name="author" content="NeuroCombat Academy" />
+    <link rel="canonical" href="https://goevr.github.io/neurocombatacademy/">
     
-    <!-- ===== OPEN GRAPH ===== -->
-    <meta property="og:title" content="NeuroCombat Academy | Capacitação Profissional em Segurança" />
-    <meta property="og:description" content="Treine sua mente para dominar o combate. Método exclusivo baseado em neurociência e experiência operacional." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://neurocombatacademy.com.br" />
-    <meta property="og:image" content="assets/images/og-image.jpg" />
+    <meta property="og:title" content="NeuroCombat Academy | Capacitação Profissional em Segurança">
+    <meta property="og:description" content="Capacitação profissional baseada em neurociência, fatores humanos e experiência operacional real.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://goevr.github.io/neurocombatacademy/">
+    <meta property="og:image" content="https://goevr.github.io/neurocombatacademy/imagens/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     
-    <!-- ===== FAVICON ===== -->
-    <link rel="icon" type="image/png" href="assets/images/favicon.ico" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NeuroCombat Academy | Capacitação Profissional em Segurança">
+    <meta name="twitter:description" content="Capacitação profissional baseada em neurociência, fatores humanos e experiência operacional real.">
+    <meta name="twitter:image" content="https://goevr.github.io/neurocombatacademy/imagens/og-image.jpg">
     
-    <!-- ===== FONTES ===== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
-    <!-- ===== CSS ===== -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
-        <!-- ===== HEADER ===== -->
-    <header class="header" id="header">
-        <div class="container">
-            <!-- LOGO + TÍTULO -->
-            <a href="#home" class="logo" aria-label="NeuroCombat Academy - Página inicial">
-                <img 
-                    src="assets/images/logo.png" 
-                    alt="NeuroCombat Academy" 
-                    class="logo-img"
-                    loading="eager"
-                />
-                <div class="logo-text">
-                    <span class="logo-name">NEURO<span>COMBAT</span></span>
-                    <span class="logo-sub">ACADEMY</span>
-                </div>
-            </a>
-            <a href="#curso" class="nav-cta">Curso Disponível</a>
-        </div>
-    </header>
+<!-- TOP BAR -->
+<div class="top-bar">
+    ⚡ Ciência · Técnica · Performance
+</div>
 
-    <!-- ===== HERO COM VÍDEO ===== -->
-    <section class="hero" id="home">
-        <!-- VÍDEO DE FUNDO EM LOOP -->
-        <video class="hero-video" autoplay muted loop playsinline preload="auto">
-            <source src="assets/videos/hero-bg.mp4" type="video/mp4" />
-            <!-- Fallback: imagem estática caso o vídeo não carregue -->
-            <div class="hero-video-fallback"></div>
-        </video>
-        
-        <!-- OVERLAY ESCURO PARA CONTRASTE -->
-        <div class="hero-overlay"></div>
-        
-        <div class="container">
-            <div class="hero-grid">
-                <div class="hero-content">
-                    <span class="hero-badge">⚡ Ciência · Técnica · Performance</span>
-                    
-                    <!-- ===== TÍTULO PRINCIPAL ===== -->
-                    <h1>
-                        Treine a mente<br />
-                        <span class="highlight">para dominar o combate</span>
-                    </h1>
-                    
-                    <p>
-                        Capacitação profissional baseada em neurociência, fatores humanos
-                        e experiência operacional real. Método exclusivo para elevar seu
-                        desempenho sob estresse.
-                    </p>
-                    <div class="hero-stats">
-                        <div class="stat">
-                            <span class="stat-number">16+</span>
-                            <span class="stat-label">Anos de experiência</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">100%</span>
-                            <span class="stat-label">Foco em evidências</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">🔬</span>
-                            <span class="stat-label">Neurociência aplicada</span>
-                        </div>
-                    </div>
-                    <div class="hero-buttons">
-                        <a href="#curso" class="btn-primary">📘 Ver curso disponível</a>
-                        <a href="#sobre" class="btn-secondary">Conheça o fundador</a>
-                    </div>
+<!-- HEADER -->
+<header class="header" id="header">
+    <div class="container">
+        <a href="#" class="logo-container">
+            <span class="logo-text">NEURO<span>COMBAT</span></span>
+            <span class="logo-sub">ACADEMY</span>
+        </a>
+        <nav class="nav-menu" aria-label="Menu principal">
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#curso">Curso</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+        <a href="#cta" class="btn-header">Quero me capacitar</a>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="container hero-grid">
+        <div class="hero-content">
+            <div class="hero-badge">⚡ Ciência · Técnica · Performance</div>
+            <h1 class="hero-title">Treine a mente<br>para dominar o combate</h1>
+            <p class="hero-description">Capacitação profissional baseada em neurociência, fatores humanos e experiência operacional real. Método exclusivo para elevar seu desempenho sob estresse.</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">16+</span>
+                    <span class="stat-label">Anos de experiência</span>
                 </div>
-                <div class="hero-image">
-                    <div class="shield">
-                        <span class="corner tl"></span>
-                        <span class="corner tr"></span>
-                        <span class="corner bl"></span>
-                        <span class="corner br"></span>
-                        
-                        <!-- LOGO NO ESCUDO -->
-                        <img 
-                            src="assets/images/logo.png" 
-                            alt="NeuroCombat Academy" 
-                            class="shield-logo-img"
-                            loading="eager"
-                        />
-                        <span class="shield-tagline">⚔️ Ciência · Técnica · Performance</span>
-                    </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Foco em evidências</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">🔬</span>
+                    <span class="stat-label">Neurociência aplicada</span>
+                </div>
+            </div>
+            <a href="#cta" class="cta-button-primary"><i class="fas fa-rocket"></i> GARANTIR MINHA VAGA</a>
+            <div class="hero-trust">
+                <span>⭐ ⭐ ⭐ ⭐ ⭐ 98% de aprovação</span>
+                <span>🎯 400+ alunos treinados</span>
+            </div>
+        </div>
+        <div class="hero-video">
+            <div class="video-placeholder">
+                <i class="fas fa-play-circle"></i>
+                <p>Vídeo institucional</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- STATS SECTION (Números que vendem) -->
+<section class="stats-section" id="stats">
+    <div class="container stats-grid">
+        <div class="stat-card">
+            <span class="stat-number">16+</span>
+            <p>Anos de experiência na segurança pública</p>
+        </div>
+        <div class="stat-card">
+            <span class="stat-number">400+</span>
+            <p>Alunos capacitados</p>
+        </div>
+        <div class="stat-card">
+            <span class="stat-number">98%</span>
+            <p>Índice de aprovação</p>
+        </div>
+        <div class="stat-card">
+            <span class="stat-number">500+</span>
+            <p>Horas de treinamento aplicado</p>
+        </div>
+    </div>
+</section>
+
+<!-- SOBRE - QUEM É NÉSIO -->
+<section class="section" id="sobre">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-image">
+                <div class="about-photo-placeholder">
+                    <i class="fas fa-user-circle"></i>
+                    <p>Foto Nésio</p>
+                </div>
+                <div class="about-credentials">
+                    <span>🏅 Especialista em Biomecânica</span>
+                    <span>🧠 Psicofisiologia do Combate</span>
+                    <span>📚 Docência em Segurança Pública</span>
+                    <span>🎯 Instrutor de Armamento e Tiro</span>
+                </div>
+            </div>
+            <div class="about-content">
+                <span class="about-tag">⚔️ Fundador</span>
+                <h2>Nésio Augusto Ferreira</h2>
+                <p>Instrutor de Armamento e Tiro | Especialista em Biomecânica e Psicofisiologia do Combate | Especialista em Docência em Segurança Pública</p>
+                <div class="about-highlights">
+                    <div>✅ 16+ anos de atuação na segurança pública</div>
+                    <div>✅ Treinamentos desenvolvidos para unir técnica, segurança e ciência aplicada</div>
+                    <div>✅ Formando pessoas mais preparadas, confiantes e responsáveis</div>
+                </div>
+                <div class="about-quote">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"Treinamento moderno vai além da repetição de técnicas — é sobre compreender os fatores humanos por trás da decisão."</p>
+                </div>
+                <div class="about-cta">
+                    <a href="#cta" class="btn-secondary">Conhecer minha trajetória</a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- ===== ABOUT / FOUNDER ===== -->
-    <section class="about" id="sobre">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-founder">
-                    <span class="badge">Fundador</span>
-                    <h3>Nésio Augusto Ferreira</h3>
-                    <p class="title">Instrutor de Armamento e Tiro | Especialista em Biomecânica e Psicofisiologia do Combate | Especialista em Docência em Segurança Pública</p>
-                    <div class="divider"></div>
-                    <p>
-                        <span class="years">16+</span><span class="years-label">anos de atuação na segurança pública</span>
-                    </p>
-                    <p>Treinamentos desenvolvidos para unir técnica, segurança e ciência aplicada, formando pessoas mais preparadas, confiantes e responsáveis.</p>
-                    <p class="quote">
-                        “Treinamento moderno vai além da repetição de técnicas — é sobre compreender
-                        os fatores humanos por trás da decisão.”
-                    </p>
-                </div>
-                <div class="about-features">
-                    <div class="feature-item">
-                        <span class="icon">🎯</span>
-                        <div>
-                            <h4>Metodologia Própria</h4>
-                            <p>Desenvolvida com base em evidências científicas e experiência operacional.</p>
-                        </div>
-                    </div>
-                    <div class="feature-item">
-                        <span class="icon">📚</span>
-                        <div>
-                            <h4>Materiais Exclusivos</h4>
-                            <p>Apostilas, recursos multimídia e simulações práticas para aprendizado real.</p>
-                        </div>
-                    </div>
-                    <div class="feature-item">
-                        <span class="icon">🧠</span>
-                        <div>
-                            <h4>Neurociência Aplicada</h4>
-                            <p>Entendimento dos fatores humanos: percepção, decisão e desempenho sob estresse.</p>
-                        </div>
-                    </div>
-                    <div class="feature-item">
-                        <span class="icon">🤝</span>
-                        <div>
-                            <h4>Comunidade de Aprendizagem</h4>
-                            <p>Formação contínua, networking e atualização constante para profissionais.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== COURSE ===== -->
-    <section class="course" id="curso">
-        <div class="container">
-            <div class="section-header text-center">
-                <span class="section-label">📘 Curso Oficial</span>
-                <h2 class="section-title">Preparatório para o <span class="cta-color">Pré-Laudo</span> de Aptidão Técnica</h2>
-                <p class="section-sub mx-auto">
-                    Primeiro curso da NeuroCombat Academy. Preparação completa para a avaliação
-                    de capacidade técnica exigida para aquisição, posse ou porte de arma de fogo.
-                </p>
-            </div>
-
-            <div class="course-card">
-                <span class="course-tag">🔴 Disponível Agora</span>
-                <h2>Pré-Laudo de Aptidão Técnica</h2>
-                <p class="course-sub">Capacitação teórica e prática com conteúdo atualizado conforme a legislação vigente.</p>
-
-                <ul class="course-features">
-                    <li><span class="check">✓</span> Apostila exclusiva e atualizada</li>
-                    <li><span class="check">✓</span> Simulados e exercícios práticos</li>
-                    <li><span class="check">✓</span> Preparação para avaliação técnica</li>
-                    <li><span class="check">✓</span> Conteúdo baseado em evidências</li>
-                    <li><span class="check">✓</span> Metodologia NeuroCombat</li>
-                    <li><span class="check">✓</span> Certificado de conclusão</li>
+<!-- POR QUE A NEUROCOMBAT É DIFERENTE? -->
+<section class="section section-alt" id="diferencial">
+    <div class="container">
+        <h2 class="section-title">Por que a NeuroCombat é diferente?</h2>
+        <p class="section-sub">Compare e veja a diferença de uma capacitação baseada em evidências</p>
+        <div class="comparison-grid">
+            <div class="comparison-card">
+                <h3>❌ Outros cursos</h3>
+                <ul>
+                    <li>❌ Repetição de técnicas</li>
+                    <li>❌ Pouca teoria aplicada</li>
+                    <li>❌ Sem neurociência</li>
+                    <li>❌ Sem fatores humanos</li>
                 </ul>
+            </div>
+            <div class="comparison-card highlight">
+                <h3>✅ NeuroCombat</h3>
+                <ul>
+                    <li>✅ Ciência aplicada</li>
+                    <li>✅ Fatores humanos</li>
+                    <li>✅ Metodologia própria</li>
+                    <li>✅ Experiência operacional</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 
-                <div class="price-area">
-                    <div>
-                        <span class="price">R$ 197 <small>ou 12x R$ 19,70</small></span>
+<!-- PILARES -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Nossos Pilares</h2>
+        <p class="section-sub">Ciência · Técnica · Responsabilidade</p>
+        <div class="pillars-grid">
+            <div class="pillar-card">
+                <i class="fas fa-flask"></i>
+                <h3>Evidência Científica</h3>
+                <p>Todo conteúdo baseado em pesquisas e dados concretos.</p>
+            </div>
+            <div class="pillar-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Experiência Operacional</h3>
+                <p>Conhecimento aplicado, testado em situações reais.</p>
+            </div>
+            <div class="pillar-card">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Formação Contínua</h3>
+                <p>Aprendizado ao longo da vida para profissionais.</p>
+            </div>
+            <div class="pillar-card">
+                <i class="fas fa-handshake"></i>
+                <h3>Responsabilidade</h3>
+                <p>Compromisso com boas práticas e ética profissional.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CURSO - CARD VISUAL -->
+<section class="section section-alt" id="curso">
+    <div class="container">
+        <h2 class="section-title">📘 Curso Oficial</h2>
+        <p class="section-sub">Preparatório para o Pré-Laudo de Aptidão Técnica</p>
+        
+        <div class="course-card">
+            <div class="course-badge">🔴 Disponível Agora</div>
+            <div class="course-grid">
+                <div class="course-info">
+                    <h3>Pré-Laudo de Aptidão Técnica</h3>
+                    <p>Capacitação teórica e prática com conteúdo atualizado conforme a legislação vigente.</p>
+                    <ul class="course-features">
+                        <li><i class="fas fa-check-circle"></i> Apostila exclusiva e atualizada</li>
+                        <li><i class="fas fa-check-circle"></i> Simulados e exercícios práticos</li>
+                        <li><i class="fas fa-check-circle"></i> Preparação para avaliação técnica</li>
+                        <li><i class="fas fa-check-circle"></i> Conteúdo baseado em evidências</li>
+                        <li><i class="fas fa-check-circle"></i> Metodologia NeuroCombat</li>
+                        <li><i class="fas fa-check-circle"></i> Certificado de conclusão</li>
+                    </ul>
+                </div>
+                <div class="course-pricing">
+                    <div class="course-price">
+                        <span class="price">R$ 197</span>
+                        <span class="installment">ou 12x R$ 19,70</span>
                     </div>
-                    <a href="#" class="btn-primary btn-lg">🎯 Garantir minha vaga</a>
-                </div>
-                <p class="price-guarantee">⚡ Garantia de 7 dias · Suporte exclusivo · Acesso imediato</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== COMING SOON ===== -->
-    <section class="coming" id="em-breve">
-        <div class="container">
-            <div class="section-header text-center">
-                <span class="section-label">🚀 Em Breve</span>
-                <h2 class="section-title">Novos <span class="cta-color">Programas</span> de Capacitação</h2>
-                <p class="section-sub mx-auto">
-                    Ampliando nossa atuação com cursos baseados em neurociência, fatores humanos
-                    e treinamento operacional.
-                </p>
-            </div>
-
-            <div class="coming-grid">
-                <div class="coming-item">
-                    <span class="emoji">🌙</span>
-                    <h4>NeuroTáticas – Low Light</h4>
-                    <p>Combate e Sobrevivência em Baixa Luminosidade</p>
-                </div>
-                <div class="coming-item">
-                    <span class="emoji">🧠</span>
-                    <h4>NeuroTáticas – Decision Making</h4>
-                    <p>Tomada de Decisão sob Estresse</p>
-                </div>
-                <div class="coming-item">
-                    <span class="emoji">🏠</span>
-                    <h4>NeuroTáticas – Home Defense</h4>
-                    <p>Fundamentos para Segurança Residencial</p>
-                </div>
-                <div class="coming-item">
-                    <span class="emoji">👤</span>
-                    <h4>NeuroTáticas – Human Factors</h4>
-                    <p>Fatores Humanos Aplicados à Segurança</p>
-                </div>
-                <div class="coming-item">
-                    <span class="emoji">⚡</span>
-                    <h4>NeuroTáticas – Neuroperformance</h4>
-                    <p>Neurociência aplicada ao desempenho operacional</p>
-                </div>
-                <div class="coming-item">
-                    <span class="emoji">📜</span>
-                    <h4>Atualização em Legislação</h4>
-                    <p>Aplicada às Armas de Fogo</p>
-                </div>
-                <div class="coming-item">
-                    <span class="emoji">🗣️</span>
-                    <h4>Comunicação e Gestão do Estresse</h4>
-                    <p>Em Situações Críticas</p>
+                    <div class="course-meta">
+                        <span><i class="fas fa-clock"></i> Carga horária: 40h</span>
+                        <span><i class="fas fa-certificate"></i> Certificado incluso</span>
+                        <span><i class="fas fa-infinity"></i> Acesso vitalício</span>
+                        <span><i class="fas fa-shield-alt"></i> Garantia 7 dias</span>
+                        <span><i class="fas fa-headset"></i> Suporte exclusivo</span>
+                    </div>
+                    <a href="#cta" class="cta-button-primary full-width"><i class="fas fa-check-circle"></i> GARANTIR MINHA VAGA</a>
+                    <div class="course-guarantee">⚡ Garantia de 7 dias · Suporte exclusivo · Acesso imediato</div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- ===== VALUES ===== -->
-    <section class="values" id="valores">
-        <div class="container">
-            <div class="section-header text-center">
-                <span class="section-label">💎 Nossos Pilares</span>
-                <h2 class="section-title">Ciência · Técnica · <span class="cta-color">Responsabilidade</span></h2>
+<!-- APOSTILA 3D (Visual) -->
+<section class="section">
+    <div class="container">
+        <div class="apostila-section">
+            <div class="apostila-content">
+                <h2>📚 Material Exclusivo</h2>
+                <p>Conheça a apostila oficial do curso. Conteúdo atualizado, didático e baseado em evidências.</p>
+                <div class="apostila-features">
+                    <span>✅ 200+ páginas</span>
+                    <span>✅ Ilustrações técnicas</span>
+                    <span>✅ Exercícios práticos</span>
+                    <span>✅ Conteúdo atualizado</span>
+                </div>
+                <a href="#cta" class="btn-secondary">Quero minha apostila</a>
             </div>
-            <div class="values-grid">
-                <div class="values-item">
-                    <span class="icon">🔬</span>
-                    <h4>Evidência Científica</h4>
-                    <p>Todo conteúdo baseado em pesquisas e dados concretos.</p>
-                </div>
-                <div class="values-item">
-                    <span class="icon">⚔️</span>
-                    <h4>Experiência Operacional</h4>
-                    <p>Conhecimento aplicado, testado em situações reais.</p>
-                </div>
-                <div class="values-item">
-                    <span class="icon">🎓</span>
-                    <h4>Formação Contínua</h4>
-                    <p>Aprendizado ao longo da vida para profissionais.</p>
-                </div>
-                <div class="values-item">
-                    <span class="icon">🤝</span>
-                    <h4>Responsabilidade</h4>
-                    <p>Compromisso com boas práticas e ética profissional.</p>
+            <div class="apostila-visual">
+                <div class="book-3d">
+                    <i class="fas fa-book-open"></i>
+                    <p>Apostila<br>NeuroCombat</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- ===== FINAL CTA ===== -->
-    <section class="cta-final">
-        <div class="container">
-            <h2>Pronto para <span class="cta-color">elevar seu nível</span>?</h2>
-            <p>
-                Capacite-se com a metodologia que une neurociência, técnica e experiência
-                operacional real.
-            </p>
-            <a href="#curso" class="btn-primary btn-xl">🎯 Quero me capacitar agora</a>
-        </div>
-    </section>
-
-    <!-- ===== FOOTER ===== -->
-    <footer class="footer">
-        <div class="container">
-            <img 
-                src="assets/images/logo.png" 
-                alt="NeuroCombat Academy" 
-                class="footer-logo-img"
-                loading="lazy"
-            />
-            <p class="footer-description">Ciência, Técnica e Desenvolvimento Profissional</p>
-            <p class="footer-copy">&copy; 2026 NeuroCombat Academy — Todos os direitos reservados.</p>
-            <div class="socials">
-                <a href="#" title="Instagram" aria-label="Instagram">📸</a>
-                <a href="#" title="YouTube" aria-label="YouTube">▶️</a>
-                <a href="#" title="LinkedIn" aria-label="LinkedIn">💼</a>
-                <a href="#" title="E-mail" aria-label="E-mail">✉️</a>
+<!-- DEPOIMENTOS -->
+<section class="section section-alt" id="depoimentos">
+    <div class="container">
+        <h2 class="section-title">Quem já treinou</h2>
+        <p class="section-sub">O que nossos alunos dizem sobre a NeuroCombat Academy</p>
+        <div class="depoimentos-grid">
+            <div class="depoimento-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"O melhor curso que já fiz. Material extremamente completo e didático. Recomendo a todos."</p>
+                <div class="depoimento-autor">
+                    <strong>Carlos</strong>
+                    <span>Guarda Municipal</span>
+                </div>
+            </div>
+            <div class="depoimento-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Finalmente um curso sério, com conteúdo baseado em ciência e experiência real. Mudou minha visão."</p>
+                <div class="depoimento-autor">
+                    <strong>João</strong>
+                    <span>CAC</span>
+                </div>
+            </div>
+            <div class="depoimento-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Metodologia diferenciada. Aprendi muito mais do que em outros treinamentos que já fiz."</p>
+                <div class="depoimento-autor">
+                    <strong>Pedro</strong>
+                    <span>Policial</span>
+                </div>
             </div>
         </div>
-    </footer>
+    </div>
+</section>
 
-    <!-- ===== JAVASCRIPT ===== -->
-    <script src="assets/js/main.js"></script>
+<!-- METODOLOGIA -->
+<section class="section">
+    <div class="container">
+        <div class="method-grid">
+            <div class="method-card">
+                <span>🎯</span>
+                <h3>Metodologia Própria</h3>
+                <p>Desenvolvida com base em evidências científicas e experiência operacional.</p>
+            </div>
+            <div class="method-card">
+                <span>📚</span>
+                <h3>Materiais Exclusivos</h3>
+                <p>Apostilas, recursos multimídia e simulações práticas para aprendizado real.</p>
+            </div>
+            <div class="method-card">
+                <span>🧠</span>
+                <h3>Neurociência Aplicada</h3>
+                <p>Entendimento dos fatores humanos: percepção, decisão e desempenho sob estresse.</p>
+            </div>
+            <div class="method-card">
+                <span>🤝</span>
+                <h3>Comunidade de Aprendizagem</h3>
+                <p>Formação contínua, networking e atualização constante para profissionais.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CURSOS EM BREVE (Carrossel simplificado) -->
+<section class="section section-alt">
+    <div class="container">
+        <h2 class="section-title">🚀 Em Breve</h2>
+        <p class="section-sub">Novos programas de capacitação baseados em neurociência e fatores humanos</p>
+        <div class="cursos-grid">
+            <div class="curso-card">
+                <span>🌙</span>
+                <h4>NeuroTáticas – Low Light</h4>
+                <p>Combate e Sobrevivência em Baixa Luminosidade</p>
+            </div>
+            <div class="curso-card">
+                <span>🧠</span>
+                <h4>NeuroTáticas – Decision Making</h4>
+                <p>Tomada de Decisão sob Estresse</p>
+            </div>
+            <div class="curso-card">
+                <span>🏠</span>
+                <h4>NeuroTáticas – Home Defense</h4>
+                <p>Fundamentos para Segurança Residencial</p>
+            </div>
+            <div class="curso-card">
+                <span>👤</span>
+                <h4>NeuroTáticas – Human Factors</h4>
+                <p>Fatores Humanos Aplicados à Segurança</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+    <div class="container">
+        <h2 class="section-title">Perguntas Frequentes</h2>
+        <div class="faq-grid">
+            <div class="faq-item">
+                <div class="faq-question">Quem pode fazer o curso?</div>
+                <div class="faq-answer">Qualquer pessoa interessada em capacitação profissional para segurança, desde civis a profissionais da área. Não é necessário ter arma própria.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Recebo certificado ao final?</div>
+                <div class="faq-answer">Sim, você recebe um certificado de conclusão reconhecido pela NeuroCombat Academy, com carga horária e conteúdo detalhado.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Quanto tempo tenho acesso ao curso?</div>
+                <div class="faq-answer">O acesso é vitalício. Você pode assistir as aulas e revisar o conteúdo quantas vezes quiser.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Precisa ter arma de fogo para fazer?</div>
+                <div class="faq-answer">Não. O curso é teórico-prático e não exige que o aluno possua arma de fogo.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Como funciona o suporte?</div>
+                <div class="faq-answer">Você tem suporte exclusivo via WhatsApp e e-mail para tirar dúvidas durante todo o curso.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final" id="cta">
+    <div class="container">
+        <h2>Pronto para elevar seu nível?</h2>
+        <p>Capacite-se com a metodologia que une neurociência, técnica e experiência operacional real.</p>
+        <a href="https://wa.me/5524999595228?text=Olá! Quero saber mais sobre o curso da NeuroCombat Academy." class="cta-button-primary"><i class="fab fa-whatsapp"></i> QUERO COMEÇAR AGORA</a>
+        <div class="cta-trust">
+            <span><i class="fas fa-shield-alt"></i> Garantia 7 dias</span>
+            <span><i class="fas fa-lock"></i> Pagamento seguro</span>
+            <span><i class="fas fa-headset"></i> Suporte exclusivo</span>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <span class="footer-logo">NEURO<span>COMBAT</span></span>
+                <span class="footer-sub">ACADEMY</span>
+                <p>Capacitação profissional baseada em neurociência, fatores humanos e experiência operacional real.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Links rápidos</h4>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#curso">Curso</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Redes sociais</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 NeuroCombat Academy. Todos os direitos reservados.</p>
+            <p>Nésio Augusto Ferreira - Instrutor de Armamento e Tiro</p>
+        </div>
+    </div>
+</footer>
+
+<!-- BARRA FIXA (WhatsApp/Instagram/Comprar) -->
+<div class="fixed-bar">
+    <a href="https://wa.me/5524999595228?text=Olá! Quero saber mais sobre o curso da NeuroCombat Academy." class="fixed-item" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span>WhatsApp</span>
+    </a>
+    <a href="#" class="fixed-item" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+        <span>Instagram</span>
+    </a>
+    <a href="#cta" class="fixed-item highlight" aria-label="Comprar">
+        <i class="fas fa-shopping-cart"></i>
+        <span>Comprar</span>
+    </a>
+    <a href="#home" class="fixed-item" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+        <span>Topo</span>
+    </a>
+</div>
+
+<script src="js/script.js" defer></script>
 </body>
 </html>
