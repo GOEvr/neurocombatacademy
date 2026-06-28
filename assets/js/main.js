@@ -1,153 +1,95 @@
 /**
- * ============================================================
- * NEUROCOMBAT ACADEMY - MAIN JAVASCRIPT
- * ============================================================
+ * NeuroCombat Academy - Script Principal
  */
 
 (function() {
     'use strict';
 
-    // ============================================================
-    // 1. HEADER SCROLL EFFECT
-    // ============================================================
+    // ============================================
+    // HEADER SCROLL
+    // ============================================
     const header = document.getElementById('header');
-    let lastScrollY = 0;
+    let ticking = false;
+    const TRIGGER = 50;
 
-    function handleHeaderScroll() {
-        const currentScrollY = window.scrollY;
-        
-        if (currentScrollY > 50) {
-            header.classList.add('scrolled');
+    function handleScroll() {
+        const currentScroll = window.scrollY;
+        if (currentScroll > TRIGGER) {
+            header?.classList.add('scrolled');
         } else {
-            header.classList.remove('scrolled');
+            header?.classList.remove('scrolled');
         }
-        
-        lastScrollY = currentScrollY;
+        ticking = false;
     }
 
-    // Throttle para performance
-    let ticking = false;
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', () => {
         if (!ticking) {
-            window.requestAnimationFrame(function() {
-                handleHeaderScroll();
-                ticking = false;
-            });
+            requestAnimationFrame(handleScroll);
             ticking = true;
         }
-    });
+    }, { passive: true });
 
-    // ============================================================
-    // 2. SMOOTH SCROLL (Links internos)
-    // ============================================================
+    handleScroll();
+
+    // ============================================
+    // FAQ ACCORDION
+    // ============================================
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    if (faqItems.length) {
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question?.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                faqItems.forEach(i => i.classList.remove('active'));
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+        faqItems[0]?.classList.add('active');
+    }
+
+    // ============================================
+    // SMOOTH SCROLL
+    // ============================================
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             const href = this.getAttribute('href');
-            
-            // Ignora links vazios
-            if (href === '#') return;
-            
-            e.preventDefault();
-            
+            if (!href || href === '#' || href.length <= 1) return;
             const target = document.querySelector(href);
             if (target) {
-                const headerHeight = header.offsetHeight;
-                const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
-                
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth'
+                e.preventDefault();
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
                 });
             }
         });
     });
 
-    // ============================================================
-    // 3. ANIMAÇÃO DE ESTATÍSTICAS (Intersection Observer)
-    // ============================================================
-    const stats = document.querySelectorAll('.stat-number');
-    let statsAnimated = false;
+    // ============================================
+    // SCROLL REVEAL
+    // ============================================
+    const fadeElements = document.querySelectorAll('.fade-up, .depoimento-card, .curso-card, .step, .card');
 
-    function animateStats() {
-        if (statsAnimated) return;
-        statsAnimated = true;
-
-        stats.forEach(stat => {
-            const text = stat.textContent;
-            // Só anima números (não emojis)
-            if (!isNaN(text.replace('+', ''))) {
-                const target = parseInt(text.replace('+', ''));
-                const suffix = text.includes('+') ? '+' : '';
-                let current = 0;
-                const increment = Math.ceil(target / 40);
-                
-                const timer = setInterval(() => {
-                    current += increment;
-                    if (current >= target) {
-                        current = target;
-                        clearInterval(timer);
-                    }
-                    stat.textContent = current + suffix;
-                }, 30);
-            }
-        });
-    }
-
-    // Observer para ativar animação quando a seção entrar na tela
-    const heroStats = document.querySelector('.hero-stats');
-    if (heroStats) {
+    if (fadeElements.length && 'IntersectionObserver' in window) {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    animateStats();
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
                     observer.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.3 });
-        
-        observer.observe(heroStats);
+        }, { threshold: 0.1 });
+
+        fadeElements.forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
     }
-
-    // ============================================================
-    // 4. TRACKING DE CLICK (opcional)
-    // ============================================================
-    document.querySelectorAll('.btn-primary, .nav-cta').forEach(btn => {
-        btn.addEventListener('click', function(e) {
-            // Registra clique em CTA (para futuras análises)
-            console.log('🔘 CTA Clicked:', this.textContent.trim());
-            
-            // Se tiver Google Analytics ou Facebook Pixel, adicionar aqui
-            // Ex: gtag('event', 'conversion', { ... });
-        });
-    });
-
-    // ============================================================
-    // 5. CONSOLE BRANDING
-    // ============================================================
-    console.log('========================================');
-    console.log('🧠 NEUROCOMBAT ACADEMY');
-    console.log('========================================');
-    console.log('🎨 Paleta: #07131F · #0D223B · #222222 · #FFFFFF · #FF6A00');
-    console.log('🔤 Fontes: Bebas Neue | Montserrat | Inter');
-    console.log('📐 Versão: 1.0.0');
-    console.log('========================================');
-    console.log('🚀 Site carregado com sucesso!');
-    console.log('========================================');
-
-    // ============================================================
-    // 6. PREVENT DOUBLE SUBMIT (caso tenha formulário)
-    // ============================================================
-    // Se adicionar formulários no futuro, usar este padrão:
-    /*
-    document.querySelectorAll('form').forEach(form => {
-        form.addEventListener('submit', function(e) {
-            const submitBtn = this.querySelector('[type="submit"]');
-            if (submitBtn) {
-                submitBtn.disabled = true;
-                submitBtn.textContent = 'Enviando...';
-            }
-        });
-    });
-    */
 
 })();
