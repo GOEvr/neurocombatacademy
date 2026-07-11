@@ -95,6 +95,12 @@ h1, h2, h3, .hero-title, .section-title {
     align-items: center;
 }
 
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
 .logo-text {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.8rem;
@@ -895,14 +901,14 @@ h1, h2, h3, .hero-title, .section-title {
 .faq-answer {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    transition: max-height 0.4s ease;
     padding: 0 24px;
     color: var(--text-muted);
     line-height: 1.6;
 }
 
 .faq-item.active .faq-answer {
-    max-height: 200px;
+    max-height: 600px;
     padding: 0 24px 20px 24px;
 }
 
@@ -1167,6 +1173,7 @@ footer {
         right: 10px;
         flex-direction: row;
         gap: 8px;
+        left: auto;
     }
 
     .fixed-item {
@@ -1198,12 +1205,22 @@ footer {
     }
 
     .fixed-bar {
-        gap: 6px;
+        gap: 4px;
+        bottom: 8px;
+        right: 8px;
     }
 
     .fixed-item {
-        width: 40px;
-        height: 40px;
-        font-size: 0.6rem;
+        width: 38px;
+        height: 38px;
+        font-size: 0.55rem;
+    }
+
+    .fixed-item i {
+        font-size: 1rem;
+    }
+
+    .fixed-item span {
+        display: none;
     }
 }
