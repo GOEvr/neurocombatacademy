@@ -595,7 +595,7 @@ h1, h2, h3, .hero-title, .section-title {
 .course-image-main {
     width: 100%;
     height: auto;
-    max-height: 400px;
+    max-height: 500px;
     object-fit: contain;
     border-radius: 16px;
     transition: transform 0.4s ease;
@@ -1130,6 +1130,10 @@ footer {
     .course-grid {
         grid-template-columns: 1fr;
     }
+
+    .course-image-main {
+        max-height: 300px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1213,6 +1217,10 @@ footer {
 
     .course-grid {
         grid-template-columns: 1fr;
+    }
+
+    .course-image-main {
+        max-height: 250px;
     }
 
     .footer-grid {
@@ -1354,6 +1362,10 @@ footer {
         font-size: 0.65rem;
     }
 
+    .course-image-main {
+        max-height: 200px;
+    }
+
     .fixed-bar {
         gap: 4px;
         bottom: 8px;
@@ -1418,6 +1430,10 @@ footer {
 
     .cursos-grid {
         grid-template-columns: 1fr;
+    }
+
+    .course-image-main {
+        max-height: 150px;
     }
 
     .fixed-item {
