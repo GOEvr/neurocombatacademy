@@ -1220,8 +1220,8 @@ footer {
     }
 
     .course-image-main {
-        max-height: 250px;
-    }
+    max-height: 350px;
+}
 
     .footer-grid {
         grid-template-columns: 1fr;
@@ -1363,8 +1363,8 @@ footer {
     }
 
     .course-image-main {
-        max-height: 200px;
-    }
+    max-height: 280px;
+}
 
     .fixed-bar {
         gap: 4px;
