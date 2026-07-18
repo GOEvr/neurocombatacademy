@@ -615,9 +615,10 @@ h1, h2, h3, .hero-title, .section-title {
 
 .course-info p {
     color: var(--text-muted);
-    line-height: 1.7;
+    line-height: 1.8;
     margin-bottom: 16px;
     font-size: 0.95rem;
+    text-align: justify;
 }
 
 .course-features {
@@ -1251,9 +1252,10 @@ footer {
         font-size: 0.9rem;
     }
 
-    .curso-info p {
-        font-size: 0.75rem;
-    }
+   .course-info p {
+    font-size: 0.9rem;
+    text-align: justify;
+}
 
     .fixed-bar {
         bottom: 10px;
