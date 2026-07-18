@@ -181,6 +181,7 @@ h1, h2, h3, .hero-title, .section-title {
 .hero-grid {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 60px;
     position: relative;
     z-index: 2;
@@ -188,6 +189,8 @@ h1, h2, h3, .hero-title, .section-title {
 
 .hero-content {
     flex: 1;
+    max-width: 700px;
+    text-align: center;
 }
 
 .hero-badge {
@@ -217,15 +220,16 @@ h1, h2, h3, .hero-title, .section-title {
 .hero-description {
     font-size: 1.15rem;
     color: var(--text-muted);
-    max-width: 600px;
+    max-width: 700px;
     line-height: 1.7;
-    margin-bottom: 30px;
+    margin: 0 auto 30px auto;
 }
 
 .hero-stats {
     display: flex;
     gap: 40px;
     margin-bottom: 30px;
+    justify-content: center;
 }
 
 .stat-item {
@@ -273,55 +277,13 @@ h1, h2, h3, .hero-title, .section-title {
     margin-top: 20px;
     font-size: 0.85rem;
     color: var(--text-muted);
+    justify-content: center;
 }
 
 .hero-trust span {
     display: flex;
     align-items: center;
     gap: 6px;
-}
-
-/* ===== HERO IMAGE (sem vídeo) ===== */
-.hero-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero-image-placeholder {
-    width: 100%;
-    max-width: 500px;
-    aspect-ratio: 1/1;
-    background: linear-gradient(145deg, #1A2340, #0A0F1E);
-    border-radius: 24px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid rgba(212, 175, 55, 0.2);
-    color: var(--text-muted);
-    text-align: center;
-    padding: 40px;
-    transition: var(--transition-smooth);
-}
-
-.hero-image-placeholder:hover {
-    border-color: rgba(212, 175, 55, 0.4);
-    box-shadow: 0 12px 32px rgba(232, 122, 42, 0.15);
-}
-
-.hero-image-placeholder i {
-    font-size: 6rem;
-    color: var(--orange);
-    margin-bottom: 16px;
-}
-
-.hero-image-placeholder p {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--text-light);
-    line-height: 1.4;
 }
 
 /* ============================================
@@ -1173,10 +1135,6 @@ footer {
     
     .hero-trust {
         justify-content: center;
-    }
-    
-    .hero-image-placeholder {
-        max-width: 300px;
     }
 }
 
