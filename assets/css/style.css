@@ -590,16 +590,16 @@ h1, h2, h3, .hero-title, .section-title {
     align-items: center;
     justify-content: center;
     background: #0A0F1E;
+    height: 100%;
 }
 
 .course-image-main {
     width: 100%;
-    height: auto;
+    height: 100%;
     max-height: 500px;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 16px;
     transition: transform 0.4s ease;
-    background: #0A0F1E;
 }
 
 .course-image-main:hover {
