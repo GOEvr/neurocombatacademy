@@ -217,8 +217,8 @@ h1, h2, h3, .hero-title, .section-title {
 .hero-description {
     font-size: 1.15rem;
     color: var(--text-muted);
-    max-width: 550px;
-    line-height: 1.6;
+    max-width: 600px;
+    line-height: 1.7;
     margin-bottom: 30px;
 }
 
@@ -281,31 +281,47 @@ h1, h2, h3, .hero-title, .section-title {
     gap: 6px;
 }
 
-.hero-video {
+/* ===== HERO IMAGE (sem vídeo) ===== */
+.hero-image {
     flex: 1;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.video-placeholder {
+.hero-image-placeholder {
     width: 100%;
     max-width: 500px;
-    aspect-ratio: 16/9;
-    background: rgba(255, 255, 255, 0.05);
+    aspect-ratio: 1/1;
+    background: linear-gradient(145deg, #1A2340, #0A0F1E);
     border-radius: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 2px dashed rgba(212, 175, 55, 0.2);
+    border: 2px solid rgba(212, 175, 55, 0.2);
     color: var(--text-muted);
-    font-size: 0.9rem;
+    text-align: center;
+    padding: 40px;
+    transition: var(--transition-smooth);
 }
 
-.video-placeholder i {
-    font-size: 4rem;
+.hero-image-placeholder:hover {
+    border-color: rgba(212, 175, 55, 0.4);
+    box-shadow: 0 12px 32px rgba(232, 122, 42, 0.15);
+}
+
+.hero-image-placeholder i {
+    font-size: 6rem;
     color: var(--orange);
-    margin-bottom: 12px;
+    margin-bottom: 16px;
+}
+
+.hero-image-placeholder p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-light);
+    line-height: 1.4;
 }
 
 /* ============================================
@@ -355,6 +371,10 @@ h1, h2, h3, .hero-title, .section-title {
     margin-bottom: 16px;
 }
 
+.section-title .highlight {
+    color: var(--orange);
+}
+
 .section-sub {
     text-align: center;
     max-width: 700px;
@@ -389,30 +409,6 @@ h1, h2, h3, .hero-title, .section-title {
 .about-photo:hover {
     border-color: rgba(212, 175, 55, 0.4);
     box-shadow: 0 12px 32px rgba(232, 122, 42, 0.2);
-}
-
-.about-photo-placeholder {
-    width: 100%;
-    max-width: 400px;
-    aspect-ratio: 1/1;
-    background: linear-gradient(135deg, #1A2340, #0A0F1E);
-    border-radius: 24px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid rgba(212, 175, 55, 0.2);
-    margin: 0 auto 20px;
-}
-
-.about-photo-placeholder i {
-    font-size: 6rem;
-    color: var(--orange);
-}
-
-.about-photo-placeholder p {
-    color: var(--text-muted);
-    margin-top: 8px;
 }
 
 .about-credentials {
@@ -814,10 +810,6 @@ h1, h2, h3, .hero-title, .section-title {
     margin-bottom: 12px;
 }
 
-.section-title .highlight {
-    color: var(--orange);
-}
-
 .cursos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -974,6 +966,10 @@ h1, h2, h3, .hero-title, .section-title {
     font-size: clamp(2.2rem, 5vw, 3.5rem);
     color: var(--text-light);
     margin-bottom: 16px;
+}
+
+.cta-final h2 .highlight {
+    color: var(--orange);
 }
 
 .cta-final p {
@@ -1162,6 +1158,25 @@ footer {
     .hero-grid {
         flex-direction: column;
         gap: 40px;
+        text-align: center;
+    }
+    
+    .hero-description {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .hero-stats {
+        justify-content: center;
+    }
+    
+    .hero-trust {
+        justify-content: center;
+    }
+    
+    .hero-image-placeholder {
+        max-width: 300px;
     }
 }
 
@@ -1226,6 +1241,7 @@ footer {
     .hero-stats {
         gap: 16px;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .stats-grid {
@@ -1236,6 +1252,7 @@ footer {
     .about-grid {
         flex-direction: column;
         gap: 40px;
+        text-align: center;
     }
 
     .about-photo {
@@ -1248,11 +1265,22 @@ footer {
 
     .apostila-section {
         grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .apostila-features {
+        justify-content: center;
     }
 
     .footer-grid {
         grid-template-columns: 1fr;
         gap: 20px;
+        text-align: center;
+    }
+
+    .footer-brand p {
+        max-width: 100%;
+        margin: 0 auto;
     }
 
     .comparison-grid {
@@ -1342,7 +1370,7 @@ footer {
     .hero-stats {
         gap: 12px;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .stat-number {
@@ -1359,6 +1387,7 @@ footer {
     .cta-trust {
         flex-direction: column;
         gap: 12px;
+        align-items: center;
     }
 
     .section-title {
