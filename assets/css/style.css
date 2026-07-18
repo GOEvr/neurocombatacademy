@@ -583,6 +583,24 @@ h1, h2, h3, .hero-title, .section-title {
     margin-top: 20px;
 }
 
+.course-image-wrapper {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.course-image-main {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 16/10;
+    border-radius: 16px;
+    transition: transform 0.4s ease;
+}
+
+.course-image-main:hover {
+    transform: scale(1.02);
+}
+
 .course-info h3 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 2rem;
@@ -592,25 +610,30 @@ h1, h2, h3, .hero-title, .section-title {
 
 .course-info p {
     color: var(--text-muted);
-    line-height: 1.6;
-    margin-bottom: 20px;
+    line-height: 1.7;
+    margin-bottom: 16px;
+    font-size: 0.95rem;
 }
 
 .course-features {
     list-style: none;
+    margin: 16px 0;
 }
 
 .course-features li {
     color: var(--text-light);
     padding: 6px 0;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 10px;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
 }
 
 .course-features li i {
     color: var(--orange);
+    margin-top: 2px;
+    flex-shrink: 0;
 }
 
 .course-pricing {
@@ -622,7 +645,7 @@ h1, h2, h3, .hero-title, .section-title {
 
 .course-price .price {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     color: var(--text-light);
 }
 
@@ -665,44 +688,6 @@ h1, h2, h3, .hero-title, .section-title {
     font-size: 0.8rem;
     text-align: center;
     width: 100%;
-}
-
-/* ============================================
-   APOSTILA
-   ============================================ */
-.apostila-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    align-items: center;
-}
-
-.apostila-content h2 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 2.8rem;
-    color: var(--text-light);
-    margin-bottom: 16px;
-}
-
-.apostila-content p {
-    color: var(--text-muted);
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-.apostila-features {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-bottom: 24px;
-}
-
-.apostila-features span {
-    background: rgba(212, 175, 55, 0.1);
-    padding: 6px 16px;
-    border-radius: 60px;
-    font-size: 0.85rem;
-    color: var(--gold);
 }
 
 /* ============================================
@@ -1053,7 +1038,7 @@ footer {
 }
 
 .social-links a:hover {
-    background: var(--orange);
+    background: var(--whatsapp);
     color: #fff;
 }
 
@@ -1135,6 +1120,10 @@ footer {
     
     .hero-trust {
         justify-content: center;
+    }
+
+    .course-grid {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -1219,15 +1208,6 @@ footer {
 
     .course-grid {
         grid-template-columns: 1fr;
-    }
-
-    .apostila-section {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .apostila-features {
-        justify-content: center;
     }
 
     .footer-grid {
