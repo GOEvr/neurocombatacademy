@@ -41,7 +41,7 @@
             {
                 "@type": "Course",
                 "name": "Programa Preparatório para obtenção do Laudo de Capacidade Técnica",
-                "description": "Programa de preparação individual para obtenção do Laudo de Capacidade Técnica com diagnóstico personalizado, 3 níveis de preparação e metodologia exclusiva NeuroCombat.",
+                "description": "Programa de preparação individual para obtenção do Laudo de Capacidade Técnica com diagnóstico personalizado, trilhas de preparação e metodologia exclusiva NeuroCombat.",
                 "provider": {
                     "@type": "Organization",
                     "name": "NeuroCombat Academy",
@@ -94,18 +94,18 @@
                     },
                     {
                         "@type": "Question",
-                        "name": "Preciso fazer o nível 1 obrigatoriamente?",
+                        "name": "Preciso fazer a Trilha Base obrigatoriamente?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Não. O diagnóstico inicial define o nível ideal para cada aluno."
+                            "text": "Não. O diagnóstico inicial define a trilha ideal para cada aluno."
                         }
                     },
                     {
                         "@type": "Question",
-                        "name": "O treinamento prático é obrigatório?",
+                        "name": "O treinamento prático em estande é obrigatório?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Depende do nível. O diagnóstico determina a necessidade de treinamento prático."
+                            "text": "Sim. Todos os participantes realizam treinamento prático em estande de tiro, simulando as etapas exigidas na avaliação."
                         }
                     },
                     {
@@ -233,8 +233,8 @@
         
         .audience-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 14px;
+            grid-template-columns: 1fr;
+            gap: 12px;
             max-width: 700px;
             margin: 0 auto;
         }
@@ -299,47 +299,6 @@
         }
         
         .recebe-item p {
-            color: var(--text-muted);
-            font-size: 0.85rem;
-            line-height: 1.5;
-        }
-        
-        .cronograma-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 24px;
-        }
-        
-        .cronograma-item {
-            background: rgba(255, 255, 255, 0.03);
-            border-radius: 16px;
-            padding: 28px 24px;
-            text-align: center;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            position: relative;
-            transition: var(--transition-smooth);
-        }
-        
-        .cronograma-item:hover {
-            border-color: rgba(212, 175, 55, 0.2);
-            transform: translateY(-4px);
-        }
-        
-        .cronograma-number {
-            font-family: 'Bebas Neue', sans-serif;
-            font-size: 2.4rem;
-            color: var(--orange);
-            opacity: 0.3;
-            margin-bottom: 8px;
-        }
-        
-        .cronograma-item h4 {
-            color: var(--text-light);
-            font-size: 1rem;
-            margin-bottom: 6px;
-        }
-        
-        .cronograma-item p {
             color: var(--text-muted);
             font-size: 0.85rem;
             line-height: 1.5;
@@ -435,14 +394,14 @@
             margin: 0 auto 20px;
         }
         
-        /* ===== NÍVEIS DE PREPARAÇÃO ===== */
-        .niveis-grid {
+        /* ===== TRILHAS DE PREPARAÇÃO ===== */
+        .trilhas-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 30px;
         }
         
-        .nivel-card {
+        .trilha-card {
             background: rgba(255, 255, 255, 0.03);
             border-radius: 20px;
             padding: 32px 28px;
@@ -452,13 +411,13 @@
             overflow: hidden;
         }
         
-        .nivel-card:hover {
+        .trilha-card:hover {
             border-color: rgba(212, 175, 55, 0.25);
             transform: translateY(-6px);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
         }
         
-        .nivel-card .nivel-badge {
+        .trilha-card .trilha-badge {
             display: inline-block;
             padding: 4px 16px;
             border-radius: 60px;
@@ -469,49 +428,49 @@
             margin-bottom: 12px;
         }
         
-        .nivel-card .nivel-badge.completo {
+        .trilha-card .trilha-badge.base {
             background: rgba(74, 124, 89, 0.2);
             color: #4A7C59;
             border: 1px solid rgba(74, 124, 89, 0.3);
         }
         
-        .nivel-card .nivel-badge.tecnico {
+        .trilha-card .trilha-badge.tecnica {
             background: rgba(212, 175, 55, 0.2);
             color: var(--gold);
             border: 1px solid rgba(212, 175, 55, 0.3);
         }
         
-        .nivel-card .nivel-badge.aprovacao {
+        .trilha-card .trilha-badge.aprovacao {
             background: rgba(232, 122, 42, 0.2);
             color: var(--orange);
             border: 1px solid rgba(232, 122, 42, 0.3);
         }
         
-        .nivel-card h3 {
+        .trilha-card h3 {
             font-family: 'Bebas Neue', sans-serif;
             font-size: 1.8rem;
             color: var(--text-light);
             margin-bottom: 4px;
         }
         
-        .nivel-card .nivel-sub {
+        .trilha-card .trilha-sub {
             color: var(--text-muted);
             font-size: 0.85rem;
             margin-bottom: 12px;
         }
         
-        .nivel-card .nivel-desc {
+        .trilha-card .trilha-desc {
             color: var(--text-muted);
             font-size: 0.9rem;
             line-height: 1.6;
             margin-bottom: 16px;
         }
         
-        .nivel-card ul {
+        .trilha-card ul {
             list-style: none;
         }
         
-        .nivel-card ul li {
+        .trilha-card ul li {
             color: var(--text-light);
             font-size: 0.85rem;
             padding: 4px 0;
@@ -520,12 +479,12 @@
             gap: 8px;
         }
         
-        .nivel-card ul li i {
+        .trilha-card ul li i {
             color: var(--orange);
             font-size: 0.8rem;
         }
         
-        .nivel-card .nivel-modalidade {
+        .trilha-card .trilha-modalidade {
             margin-top: 16px;
             padding-top: 16px;
             border-top: 1px solid rgba(255, 255, 255, 0.05);
@@ -533,13 +492,30 @@
             color: var(--gold);
         }
         
-        .nivel-card .nivel-perfil {
+        .trilha-card .trilha-perfil {
             font-size: 0.75rem;
             color: var(--text-muted);
             background: rgba(255, 255, 255, 0.03);
             padding: 8px 12px;
             border-radius: 8px;
             margin: 8px 0 12px;
+        }
+        
+        .trilha-card .trilha-carga {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 8px;
+        }
+        
+        .trilha-card .trilha-estande {
+            margin-top: 8px;
+            padding: 6px 12px;
+            background: rgba(232, 122, 42, 0.08);
+            border-radius: 8px;
+            color: var(--orange);
+            font-size: 0.75rem;
+            display: inline-block;
+            border: 1px solid rgba(232, 122, 42, 0.1);
         }
         
         /* ===== DIAGNÓSTICO ===== */
@@ -741,7 +717,7 @@
             .recebe-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
-            .niveis-grid {
+            .trilhas-grid {
                 grid-template-columns: 1fr;
                 max-width: 500px;
                 margin: 0 auto;
@@ -770,9 +746,6 @@
             .recebe-grid {
                 grid-template-columns: 1fr;
             }
-            .audience-grid {
-                grid-template-columns: 1fr;
-            }
             .conteudo-grid {
                 grid-template-columns: 1fr;
             }
@@ -792,6 +765,9 @@
                 font-size: 1.6rem;
             }
             .modalidades-grid {
+                grid-template-columns: 1fr;
+            }
+            .audience-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -844,10 +820,13 @@
                 </div>
                 <div class="stat-item">
                     <span class="stat-number">🎯</span>
-                    <span class="stat-label">Treinamento prático</span>
+                    <span class="stat-label">Treinamento em estande</span>
                 </div>
             </div>
             <a href="#cta" class="cta-button-primary"><i class="fab fa-whatsapp"></i> FALAR COM ESPECIALISTA</a>
+            <div class="hero-trust">
+                <span>✅ Todos os níveis com treinamento em estande</span>
+            </div>
         </div>
         <div class="hero-image">
             <div class="hero-shield">
@@ -910,7 +889,7 @@
         <span class="separator">›</span>
         <span class="current">Programa Laudo de Capacidade Técnica</span>
     </div>
-</section>
+</div>
 
 <!-- ============================================================
      O QUE É O PROGRAMA
@@ -940,7 +919,7 @@
                     <div>✅ Material exclusivo</div>
                     <div>✅ Simulados</div>
                     <div>✅ Acompanhamento</div>
-                    <div>✅ Treinamento prático</div>
+                    <div>✅ Treinamento em estande</div>
                 </div>
                 <a href="#diagnostico" class="btn-secondary">Quero fazer o diagnóstico</a>
             </div>
@@ -954,31 +933,27 @@
 <section class="section section-alt" id="publico">
     <div class="container">
         <h2 class="section-title">Para quem é este <span class="highlight">programa</span>?</h2>
-        <p class="section-sub">O Programa Preparatório NeuroCombat é ideal para:</p>
+        <p class="section-sub">O Programa Preparatório atende candidatos que precisam demonstrar capacidade técnica perante profissional credenciado pela Polícia Federal.</p>
         <div class="audience-grid">
             <div class="audience-item">
-                <i class="fas fa-check-circle"></i>
-                <span>Quem deseja adquirir arma de fogo</span>
+                <i class="fas fa-circle" style="color: var(--orange); font-size: 0.6rem;"></i>
+                <span>Candidatos à primeira aquisição de arma de fogo (posse ou porte, conforme legislação aplicável)</span>
             </div>
             <div class="audience-item">
-                <i class="fas fa-check-circle"></i>
-                <span>CACs iniciantes</span>
+                <i class="fas fa-circle" style="color: var(--orange); font-size: 0.6rem;"></i>
+                <span>CACs em processo de obtenção do Certificado de Registro, quando exigida a comprovação de capacidade técnica</span>
             </div>
             <div class="audience-item">
-                <i class="fas fa-check-circle"></i>
-                <span>Profissionais de segurança privada</span>
+                <i class="fas fa-circle" style="color: var(--orange); font-size: 0.6rem;"></i>
+                <span>CACs em renovação do Certificado de Registro (CR)</span>
             </div>
             <div class="audience-item">
-                <i class="fas fa-check-circle"></i>
-                <span>Guardas Municipais</span>
+                <i class="fas fa-circle" style="color: var(--orange); font-size: 0.6rem;"></i>
+                <span>Renovação do CRAF ou demais situações em que seja necessária nova comprovação da capacidade técnica</span>
             </div>
             <div class="audience-item">
-                <i class="fas fa-check-circle"></i>
-                <span>Policiais e agentes públicos</span>
-            </div>
-            <div class="audience-item">
-                <i class="fas fa-check-circle"></i>
-                <span>Cidadãos que buscam posse de arma para defesa</span>
+                <i class="fas fa-circle" style="color: var(--orange); font-size: 0.6rem;"></i>
+                <span>Profissionais da segurança pública ou privada que desejam atualização técnica</span>
             </div>
         </div>
     </div>
@@ -996,31 +971,27 @@
         </div>
         <div class="diagnostico-grid">
             <div class="diagnostico-text">
-                <h3>Você não escolhe o nível. O diagnóstico escolhe por você.</h3>
+                <h3>Você não escolhe a trilha. O diagnóstico escolhe por você.</h3>
                 <p>O diagnóstico avalia:</p>
                 <div class="diagnostico-items">
                     <div class="diagnostico-item">
                         <i class="fas fa-check-circle"></i>
-                        <span>⚖️ Legislação</span>
+                        <span>📚 Conhecimento sobre legislação</span>
                     </div>
                     <div class="diagnostico-item">
                         <i class="fas fa-check-circle"></i>
-                        <span>🛡️ Segurança</span>
+                        <span>🛡️ Segurança e manuseio</span>
                     </div>
                     <div class="diagnostico-item">
                         <i class="fas fa-check-circle"></i>
-                        <span>🔩 Funcionamento da arma</span>
+                        <span>🎯 Conhecimento técnico da avaliação</span>
                     </div>
                     <div class="diagnostico-item">
                         <i class="fas fa-check-circle"></i>
-                        <span>🎯 Manuseio seguro</span>
-                    </div>
-                    <div class="diagnostico-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>📚 Conhecimento técnico</span>
+                        <span>🧠 Experiência anterior do candidato</span>
                     </div>
                 </div>
-                <p style="margin-top: 16px; color: var(--text-light);">Resultado: você é direcionado automaticamente para o <strong>Nível 1, 2 ou 3</strong>.</p>
+                <p style="margin-top: 16px; color: var(--text-light);">Resultado: você é direcionado automaticamente para a <strong>Trilha Base, Trilha Técnica ou Trilha Aprovação Assistida</strong>.</p>
                 <a href="#cta" class="btn-secondary" style="margin-top: 16px;">Quero fazer o diagnóstico</a>
             </div>
             <div class="diagnostico-visual">
@@ -1035,7 +1006,7 @@
                     <span class="step-num">2</span>
                     <div class="step-text">
                         <h4>Classificação NeuroCombat</h4>
-                        <p>Indicação do Nível 1, 2 ou 3</p>
+                        <p>Indicação da Trilha Base, Técnica ou Aprovação Assistida</p>
                     </div>
                 </div>
                 <div class="diagnostico-step">
@@ -1058,72 +1029,81 @@
 </section>
 
 <!-- ============================================================
-     NÍVEIS DE PREPARAÇÃO (3 NÍVEIS)
+     TRILHAS DE PREPARAÇÃO (3 TRILHAS)
      ============================================================ -->
-<section class="section section-alt" id="niveis">
+<section class="section section-alt" id="trilhas">
     <div class="container">
         <div class="section-header">
-            <span class="section-badge">🎯 Trilha NeuroCombat</span>
-            <h2 class="section-title">Preparação Personalizada em <span class="highlight">3 Níveis</span></h2>
-            <p class="section-sub">Quanto menos conhecimento, mais completa é a preparação</p>
+            <span class="section-badge">🎯 Metodologia NeuroCombat</span>
+            <h2 class="section-title">Trilhas de <span class="highlight">preparação</span></h2>
+            <p class="section-sub">Todos os participantes realizam treinamento prático em estande de tiro, simulando as etapas exigidas na avaliação para obtenção do Laudo de Capacidade Técnica.</p>
         </div>
-        <div class="niveis-grid">
-            <!-- NÍVEL 1 - PREPARAÇÃO COMPLETA -->
-            <div class="nivel-card">
-                <span class="nivel-badge completo">Nível 1</span>
+        <div class="trilhas-grid">
+            <!-- TRILHA BASE -->
+            <div class="trilha-card">
+                <span class="trilha-badge base">🟠 Trilha Base</span>
                 <h3>Preparação Completa</h3>
-                <p class="nivel-sub">Mais horas de treinamento</p>
-                <div class="nivel-perfil">👤 Nunca teve contato com armas de fogo ou possui conhecimento muito básico.</div>
-                <p class="nivel-desc">Sair do zero até estar apto para realizar a avaliação com segurança.</p>
+                <p class="trilha-sub">Quem está começando do zero ou possui pouco conhecimento</p>
+                <div class="trilha-perfil">👤 Construir toda a base necessária para chegar com segurança à avaliação</div>
                 <ul>
-                    <li><i class="fas fa-check"></i> 📚 Legislação aplicada à PF</li>
-                    <li><i class="fas fa-check"></i> 🛡️ Regras universais de segurança</li>
-                    <li><i class="fas fa-check"></i> 🔩 Nomenclatura e funcionamento</li>
-                    <li><i class="fas fa-check"></i> 💥 Munições</li>
-                    <li><i class="fas fa-check"></i> 🎯 Treino seco guiado</li>
-                    <li><i class="fas fa-check"></i> 📝 Simulados comentados</li>
-                    <li><i class="fas fa-check"></i> 🎥 Videoaulas</li>
+                    <li><i class="fas fa-check"></i> Legislação aplicada</li>
+                    <li><i class="fas fa-check"></i> Segurança no manuseio</li>
+                    <li><i class="fas fa-check"></i> Funcionamento e nomenclatura</li>
+                    <li><i class="fas fa-check"></i> Munições</li>
+                    <li><i class="fas fa-check"></i> Treino seco guiado</li>
+                    <li><i class="fas fa-check"></i> Simulados teóricos</li>
+                    <li><i class="fas fa-check"></i> Treinamento em estande</li>
+                    <li><i class="fas fa-check"></i> Simulação da prova prática</li>
                 </ul>
-                <div class="nivel-modalidade">📱 Modalidade: EAD + acompanhamento online + prática presencial opcional</div>
-                <div style="margin-top: 12px; font-size: 0.8rem; color: var(--text-muted);">⏱️ Carga estimada: 12-16 horas</div>
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+                    <span class="trilha-estande">🔫 Inclui treinamento em estande</span>
+                    <span class="trilha-carga">⏱️ Carga: 12-16 horas</span>
+                </div>
+                <div class="trilha-modalidade">📱 Modalidade: Híbrido (EAD + Presencial)</div>
             </div>
             
-            <!-- NÍVEL 2 - PREPARAÇÃO TÉCNICA -->
-            <div class="nivel-card">
-                <span class="nivel-badge tecnico">Nível 2</span>
+            <!-- TRILHA TÉCNICA -->
+            <div class="trilha-card">
+                <span class="trilha-badge tecnica">🟡 Trilha Técnica</span>
                 <h3>Preparação Técnica</h3>
-                <p class="nivel-sub">Treinamento direcionado</p>
-                <div class="nivel-perfil">👤 Já estudou, já possui arma ou já frequentou estande.</div>
-                <p class="nivel-desc">Corrigir falhas e alinhar o candidato ao padrão exigido.</p>
+                <p class="trilha-sub">Já possui conhecimento básico, já estudou ou já frequentou estande</p>
+                <div class="trilha-perfil">👤 Corrigir erros e consolidar técnica</div>
                 <ul>
-                    <li><i class="fas fa-check"></i> 🔁 Revisão dos fundamentos</li>
-                    <li><i class="fas fa-check"></i> 🎯 Treino seco orientado</li>
-                    <li><i class="fas fa-check"></i> 🔍 Correção de empunhadura e postura</li>
-                    <li><i class="fas fa-check"></i> 📋 Checklist da avaliação</li>
-                    <li><i class="fas fa-check"></i> 📝 Simulados completos</li>
-                    <li><i class="fas fa-check"></i> 📈 Análise de desempenho</li>
+                    <li><i class="fas fa-check"></i> Diagnóstico inicial</li>
+                    <li><i class="fas fa-check"></i> Revisão direcionada</li>
+                    <li><i class="fas fa-check"></i> Treino seco corretivo</li>
+                    <li><i class="fas fa-check"></i> Simulados completos</li>
+                    <li><i class="fas fa-check"></i> Treinamento em estande</li>
+                    <li><i class="fas fa-check"></i> Correção individual dos disparos</li>
+                    <li><i class="fas fa-check"></i> Simulação oficial</li>
                 </ul>
-                <div class="nivel-modalidade">💻 Modalidade: Híbrido</div>
-                <div style="margin-top: 12px; font-size: 0.8rem; color: var(--text-muted);">⏱️ Carga estimada: 8-10 horas</div>
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+                    <span class="trilha-estande">🔫 Inclui treinamento em estande</span>
+                    <span class="trilha-carga">⏱️ Carga: 8-10 horas</span>
+                </div>
+                <div class="trilha-modalidade">💻 Modalidade: Híbrido</div>
             </div>
             
-            <!-- NÍVEL 3 - APROVAÇÃO ASSISTIDA -->
-            <div class="nivel-card">
-                <span class="nivel-badge aprovacao">Nível 3</span>
+            <!-- TRILHA APROVAÇÃO ASSISTIDA -->
+            <div class="trilha-card">
+                <span class="trilha-badge aprovacao">🔵 Trilha Aprovação Assistida</span>
                 <h3>Aprovação Assistida</h3>
-                <p class="nivel-sub">Mentoria Individual</p>
-                <div class="nivel-perfil">👤 Já possui domínio técnico e deseja preparação final.</div>
-                <p class="nivel-desc">Refinar detalhes até atingir o padrão da avaliação.</p>
+                <p class="trilha-sub">Já demonstra domínio dos fundamentos</p>
+                <div class="trilha-perfil">👤 Refinar desempenho para a avaliação</div>
                 <ul>
-                    <li><i class="fas fa-check"></i> 🧠 Diagnóstico individual</li>
-                    <li><i class="fas fa-check"></i> 🎯 Plano personalizado</li>
-                    <li><i class="fas fa-check"></i> 🔧 Correção técnica individual</li>
-                    <li><i class="fas fa-check"></i> 📍 Simulação oficial</li>
-                    <li><i class="fas fa-check"></i> 📊 Checklist final</li>
-                    <li><i class="fas fa-check"></i> 🤝 Acompanhamento até o exame</li>
+                    <li><i class="fas fa-check"></i> Diagnóstico completo</li>
+                    <li><i class="fas fa-check"></i> Plano personalizado</li>
+                    <li><i class="fas fa-check"></i> Treino seco específico</li>
+                    <li><i class="fas fa-check"></i> Treinamento em estande</li>
+                    <li><i class="fas fa-check"></i> Correção técnica individual</li>
+                    <li><i class="fas fa-check"></i> Simulação oficial da avaliação</li>
+                    <li><i class="fas fa-check"></i> Acompanhamento até o dia do exame</li>
                 </ul>
-                <div class="nivel-modalidade">🏛️ Modalidade: Presencial + suporte online</div>
-                <div style="margin-top: 12px; font-size: 0.8rem; color: var(--text-muted);">⏱️ Carga estimada: 4-6 horas</div>
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+                    <span class="trilha-estande">🔫 Inclui treinamento em estande</span>
+                    <span class="trilha-carga">⏱️ Carga: 4-6 horas</span>
+                </div>
+                <div class="trilha-modalidade">🏛️ Modalidade: Presencial + suporte online</div>
             </div>
         </div>
     </div>
@@ -1293,7 +1273,7 @@
             <div class="jornada-item">
                 <div class="jornada-num">2</div>
                 <h4>Nivelamento</h4>
-                <p>Você entra no nível adequado</p>
+                <p>Você entra na trilha adequada</p>
             </div>
             <div class="jornada-item">
                 <div class="jornada-num">3</div>
@@ -1397,12 +1377,12 @@
                 <div class="faq-answer">Não. O programa é teórico-prático e não exige que o aluno possua arma de fogo.</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">Preciso fazer o nível 1 obrigatoriamente?</div>
-                <div class="faq-answer">Não. O diagnóstico inicial define o nível ideal para cada aluno.</div>
+                <div class="faq-question">Preciso fazer a Trilha Base obrigatoriamente?</div>
+                <div class="faq-answer">Não. O diagnóstico inicial define a trilha ideal para cada aluno.</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">O treinamento prático é obrigatório?</div>
-                <div class="faq-answer">Depende do nível. O diagnóstico determina a necessidade de treinamento prático.</div>
+                <div class="faq-question">O treinamento prático em estande é obrigatório?</div>
+                <div class="faq-answer">Sim. Todos os participantes realizam treinamento prático em estande de tiro, simulando as etapas exigidas na avaliação.</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">A NeuroCombat emite o Laudo?</div>
@@ -1437,12 +1417,12 @@
     <div class="container">
         <span class="cta-badge">🎯 Preparação Personalizada</span>
         <h2>Inicie sua <span class="highlight">preparação personalizada</span></h2>
-        <p>Faça seu diagnóstico inicial e descubra o nível ideal para sua aprovação no Laudo de Capacidade Técnica.</p>
+        <p>Faça seu diagnóstico inicial e descubra a trilha ideal para sua aprovação no Laudo de Capacidade Técnica.</p>
         <a href="https://wa.me/5524999599347?text=Olá! Quero iniciar minha preparação para o Laudo de Capacidade Técnica da NeuroCombat Academy." class="cta-button-primary" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> QUERO INICIAR MINHA PREPARAÇÃO</a>
         <div class="cta-trust">
             <span><i class="fas fa-headset"></i> Suporte exclusivo</span>
             <span><i class="fas fa-flask"></i> Metodologia própria</span>
-            <span><i class="fas fa-shield-alt"></i> Treinamento prático</span>
+            <span><i class="fas fa-shield-alt"></i> Treinamento em estande</span>
         </div>
     </div>
 </section>
