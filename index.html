@@ -257,7 +257,7 @@
         
         .audience-item i {
             color: var(--orange);
-            font-size: 1.1rem;
+            font-size: 0.6rem;
         }
         
         .audience-item span {
@@ -709,6 +709,138 @@
             margin-top: 6px;
         }
         
+        /* ===== GARANTIA ===== */
+        .garantia-box {
+            background: linear-gradient(135deg, rgba(20, 27, 45, 0.8), rgba(10, 15, 30, 0.9));
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            border-radius: 24px;
+            padding: 40px;
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .garantia-box::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -30%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(232, 122, 42, 0.04) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        
+        .garantia-box .garantia-badge {
+            display: inline-block;
+            background: rgba(232, 122, 42, 0.12);
+            color: var(--orange);
+            padding: 4px 16px;
+            border-radius: 60px;
+            font-size: 0.6rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+        
+        .garantia-box h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
+            color: var(--text-light);
+            margin-bottom: 12px;
+        }
+        
+        .garantia-box p {
+            color: var(--text-muted);
+            line-height: 1.6;
+            max-width: 500px;
+            margin: 0 auto 20px;
+        }
+        
+        /* ===== AVALIAÇÃO PF ===== */
+        .avaliacao-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .avaliacao-card {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 16px;
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            transition: var(--transition-smooth);
+        }
+        
+        .avaliacao-card:hover {
+            border-color: rgba(212, 175, 55, 0.2);
+        }
+        
+        .avaliacao-card h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.6rem;
+            color: var(--text-light);
+            margin-bottom: 12px;
+        }
+        
+        .avaliacao-card ul {
+            list-style: none;
+        }
+        
+        .avaliacao-card ul li {
+            color: var(--text-muted);
+            padding: 4px 0;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .avaliacao-card ul li i {
+            color: var(--orange);
+        }
+        
+        /* ===== MÓDULOS ===== */
+        .modulos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .modulo-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 14px 18px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: var(--transition-smooth);
+        }
+        
+        .modulo-item:hover {
+            border-color: rgba(212, 175, 55, 0.2);
+        }
+        
+        .modulo-item .modulo-num {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.2rem;
+            color: var(--gold);
+            min-width: 28px;
+        }
+        
+        .modulo-item span {
+            color: var(--text-light);
+            font-size: 0.85rem;
+        }
+        
         /* ===== RESPONSIVO ===== */
         @media (max-width: 992px) {
             .info-grid {
@@ -733,7 +865,10 @@
                 max-width: 400px;
                 margin: 0 auto;
             }
-            .conteudo-grid {
+            .avaliacao-grid {
+                grid-template-columns: 1fr;
+            }
+            .modulos-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
@@ -746,7 +881,7 @@
             .recebe-grid {
                 grid-template-columns: 1fr;
             }
-            .conteudo-grid {
+            .audience-grid {
                 grid-template-columns: 1fr;
             }
             .diagnostico-items {
@@ -767,8 +902,17 @@
             .modalidades-grid {
                 grid-template-columns: 1fr;
             }
-            .audience-grid {
+            .avaliacao-grid {
                 grid-template-columns: 1fr;
+            }
+            .modulos-grid {
+                grid-template-columns: 1fr;
+            }
+            .garantia-box {
+                padding: 24px 20px;
+            }
+            .garantia-box h3 {
+                font-size: 1.6rem;
             }
         }
     </style>
@@ -826,6 +970,7 @@
             <a href="#cta" class="cta-button-primary"><i class="fab fa-whatsapp"></i> FALAR COM ESPECIALISTA</a>
             <div class="hero-trust">
                 <span>✅ Todos os níveis com treinamento em estande</span>
+                <span>🤝 Acompanhamento até o dia da avaliação</span>
             </div>
         </div>
         <div class="hero-image">
@@ -918,7 +1063,7 @@
                     <div>✅ Plano individual</div>
                     <div>✅ Material exclusivo</div>
                     <div>✅ Simulados</div>
-                    <div>✅ Acompanhamento</div>
+                    <div>✅ Acompanhamento até o dia da avaliação</div>
                     <div>✅ Treinamento em estande</div>
                 </div>
                 <a href="#diagnostico" class="btn-secondary">Quero fazer o diagnóstico</a>
@@ -936,24 +1081,107 @@
         <p class="section-sub">O Programa Preparatório atende candidatos que precisam demonstrar capacidade técnica perante profissional credenciado pela Polícia Federal.</p>
         <div class="audience-grid">
             <div class="audience-item">
-                <i class="fas fa-circle" style="color: var(--orange); font-size: 0.6rem;"></i>
-                <span>Candidatos à primeira aquisição de arma de fogo (posse ou porte, conforme legislação aplicável)</span>
+                <i class="fas fa-circle"></i>
+                <span><strong>Pessoas que desejam adquirir arma de fogo pela primeira vez</strong> (posse ou porte, conforme os requisitos legais)</span>
             </div>
             <div class="audience-item">
-                <i class="fas fa-circle" style="color: var(--orange); font-size: 0.6rem;"></i>
-                <span>CACs em processo de obtenção do Certificado de Registro, quando exigida a comprovação de capacidade técnica</span>
+                <i class="fas fa-circle"></i>
+                <span><strong>CACs</strong> — obtenção do Certificado de Registro (CR)</span>
             </div>
             <div class="audience-item">
-                <i class="fas fa-circle" style="color: var(--orange); font-size: 0.6rem;"></i>
-                <span>CACs em renovação do Certificado de Registro (CR)</span>
+                <i class="fas fa-circle"></i>
+                <span><strong>CACs</strong> — renovação do Certificado de Registro (CR)</span>
             </div>
             <div class="audience-item">
-                <i class="fas fa-circle" style="color: var(--orange); font-size: 0.6rem;"></i>
-                <span>Renovação do CRAF ou demais situações em que seja necessária nova comprovação da capacidade técnica</span>
+                <i class="fas fa-circle"></i>
+                <span><strong>Renovação do CRAF</strong> ou demais situações em que seja necessária nova comprovação da capacidade técnica</span>
             </div>
             <div class="audience-item">
-                <i class="fas fa-circle" style="color: var(--orange); font-size: 0.6rem;"></i>
-                <span>Profissionais da segurança pública ou privada que desejam atualização técnica</span>
+                <i class="fas fa-circle"></i>
+                <span><strong>Profissionais da segurança pública ou privada</strong> que desejam atualização técnica</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     COMO É A AVALIAÇÃO DA POLÍCIA FEDERAL
+     ============================================================ -->
+<section class="section" id="avaliacao-pf">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">📋 Avaliação da Polícia Federal</span>
+            <h2 class="section-title">Como é a <span class="highlight">avaliação</span>?</h2>
+            <p class="section-sub">O candidato deve ser avaliado em dois aspectos para obter o Laudo de Capacidade Técnica</p>
+        </div>
+        <div class="avaliacao-grid">
+            <div class="avaliacao-card">
+                <h3>📖 Avaliação Teórica</h3>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Segurança no manuseio</li>
+                    <li><i class="fas fa-check-circle"></i> Legislação aplicada</li>
+                    <li><i class="fas fa-check-circle"></i> Funcionamento da arma</li>
+                    <li><i class="fas fa-check-circle"></i> Nomenclatura</li>
+                    <li><i class="fas fa-check-circle"></i> Munições</li>
+                    <li><i class="fas fa-check-circle"></i> Procedimentos operacionais</li>
+                </ul>
+            </div>
+            <div class="avaliacao-card">
+                <h3>🎯 Avaliação Prática</h3>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Manuseio seguro da arma</li>
+                    <li><i class="fas fa-check-circle"></i> Alimentação da arma</li>
+                    <li><i class="fas fa-check-circle"></i> Carregamento e descarregamento</li>
+                    <li><i class="fas fa-check-circle"></i> Disparos em alvo conforme critérios do avaliador</li>
+                    <li><i class="fas fa-check-circle"></i> Correção de postura e empunhadura</li>
+                    <li><i class="fas fa-check-circle"></i> Simulação das etapas exigidas na avaliação</li>
+                </ul>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 30px;">
+            <p style="color: var(--text-muted); font-size: 1.1rem;">✔️ Aprovação em ambas as etapas = <strong style="color: var(--orange);">Laudo de Capacidade Técnica</strong></p>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     CONTEÚDO DA APOSTILA — 7 MÓDULOS
+     ============================================================ -->
+<section class="section section-alt" id="modulos">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">📚 Conteúdo Oficial</span>
+            <h2 class="section-title">7 módulos da <span class="highlight">apostila</span></h2>
+            <p class="section-sub">Material completo desenvolvido pela NeuroCombat Academy</p>
+        </div>
+        <div class="modulos-grid">
+            <div class="modulo-item">
+                <span class="modulo-num">01</span>
+                <span>Módulo 1 — Legislação Aplicada</span>
+            </div>
+            <div class="modulo-item">
+                <span class="modulo-num">02</span>
+                <span>Módulo 2 — Segurança no Manuseio</span>
+            </div>
+            <div class="modulo-item">
+                <span class="modulo-num">03</span>
+                <span>Módulo 3 — Partes e Funcionamento das Armas</span>
+            </div>
+            <div class="modulo-item">
+                <span class="modulo-num">04</span>
+                <span>Módulo 4 — Munições e Fundamentos do Tiro</span>
+            </div>
+            <div class="modulo-item">
+                <span class="modulo-num">05</span>
+                <span>Módulo 5 — Procedimentos da Avaliação Prática</span>
+            </div>
+            <div class="modulo-item">
+                <span class="modulo-num">06</span>
+                <span>Módulo 6 — Treinamento em Estande</span>
+            </div>
+            <div class="modulo-item">
+                <span class="modulo-num">07</span>
+                <span>Módulo 7 — Simulados e Checklist Final</span>
             </div>
         </div>
     </div>
@@ -972,6 +1200,7 @@
         <div class="diagnostico-grid">
             <div class="diagnostico-text">
                 <h3>Você não escolhe a trilha. O diagnóstico escolhe por você.</h3>
+                <p><strong>Cada candidato chega em um ponto diferente.</strong> Alguns nunca tiveram contato com armas de fogo. Outros já possuem experiência e precisam apenas corrigir falhas. Por isso a NeuroCombat Academy utiliza um <strong>Diagnóstico Inicial</strong> para definir a quantidade de treinamento necessária para cada aluno.</p>
                 <p>O diagnóstico avalia:</p>
                 <div class="diagnostico-items">
                     <div class="diagnostico-item">
@@ -1037,12 +1266,13 @@
             <span class="section-badge">🎯 Metodologia NeuroCombat</span>
             <h2 class="section-title">Trilhas de <span class="highlight">preparação</span></h2>
             <p class="section-sub">Todos os participantes realizam treinamento prático em estande de tiro, simulando as etapas exigidas na avaliação para obtenção do Laudo de Capacidade Técnica.</p>
+            <p style="color: var(--text-muted); font-size: 0.95rem; max-width: 600px; margin: 0 auto;">O que muda entre as trilhas é a <strong>intensidade da preparação</strong> — da maior carga teórica e prática até o treinamento mais individualizado.</p>
         </div>
         <div class="trilhas-grid">
             <!-- TRILHA BASE -->
             <div class="trilha-card">
                 <span class="trilha-badge base">🟠 Trilha Base</span>
-                <h3>Preparação Completa</h3>
+                <h3>Preparação Fundamental</h3>
                 <p class="trilha-sub">Quem está começando do zero ou possui pouco conhecimento</p>
                 <div class="trilha-perfil">👤 Construir toda a base necessária para chegar com segurança à avaliação</div>
                 <ul>
@@ -1057,7 +1287,7 @@
                 </ul>
                 <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
                     <span class="trilha-estande">🔫 Inclui treinamento em estande</span>
-                    <span class="trilha-carga">⏱️ Carga: 12-16 horas</span>
+                    <span class="trilha-carga">⏱️ Maior carga de preparação</span>
                 </div>
                 <div class="trilha-modalidade">📱 Modalidade: Híbrido (EAD + Presencial)</div>
             </div>
@@ -1079,7 +1309,7 @@
                 </ul>
                 <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
                     <span class="trilha-estande">🔫 Inclui treinamento em estande</span>
-                    <span class="trilha-carga">⏱️ Carga: 8-10 horas</span>
+                    <span class="trilha-carga">⏱️ Carga intermediária</span>
                 </div>
                 <div class="trilha-modalidade">💻 Modalidade: Híbrido</div>
             </div>
@@ -1087,7 +1317,7 @@
             <!-- TRILHA APROVAÇÃO ASSISTIDA -->
             <div class="trilha-card">
                 <span class="trilha-badge aprovacao">🔵 Trilha Aprovação Assistida</span>
-                <h3>Aprovação Assistida</h3>
+                <h3>Preparação Individualizada</h3>
                 <p class="trilha-sub">Já demonstra domínio dos fundamentos</p>
                 <div class="trilha-perfil">👤 Refinar desempenho para a avaliação</div>
                 <ul>
@@ -1101,7 +1331,7 @@
                 </ul>
                 <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
                     <span class="trilha-estande">🔫 Inclui treinamento em estande</span>
-                    <span class="trilha-carga">⏱️ Carga: 4-6 horas</span>
+                    <span class="trilha-carga">⏱️ Menor carga, treinamento totalmente individual</span>
                 </div>
                 <div class="trilha-modalidade">🏛️ Modalidade: Presencial + suporte online</div>
             </div>
@@ -1110,39 +1340,15 @@
 </section>
 
 <!-- ============================================================
-     MODALIDADES
-     ============================================================ -->
-<section class="section" id="modalidades">
-    <div class="container">
-        <h2 class="section-title">Modalidades de <span class="highlight">preparação</span></h2>
-        <p class="section-sub">Escolha a forma de estudo que melhor se adapta à sua rotina</p>
-        <div class="modalidades-grid">
-            <div class="modalidade-item">
-                <i class="fas fa-laptop"></i>
-                <h4>EAD</h4>
-                <p>Videoaulas, apostila digital, simulados e suporte online.</p>
-            </div>
-            <div class="modalidade-item">
-                <i class="fas fa-users"></i>
-                <h4>Híbrido</h4>
-                <p>Estudo online + treinamento presencial para prática supervisionada.</p>
-            </div>
-            <div class="modalidade-item">
-                <i class="fas fa-user-tie"></i>
-                <h4>Presencial</h4>
-                <p>Mentoria individual e preparação prática intensiva.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ============================================================
      O QUE O ALUNO RECEBE
      ============================================================ -->
-<section class="section section-alt" id="recebe">
+<section class="section" id="recebe">
     <div class="container">
-        <h2 class="section-title">O que você <span class="highlight">recebe</span></h2>
-        <p class="section-sub">Tudo que você precisa para se preparar com confiança</p>
+        <div class="section-header">
+            <span class="section-badge">📦 Incluso no Programa</span>
+            <h2 class="section-title">O que você <span class="highlight">recebe</span></h2>
+            <p class="section-sub">Tudo que você precisa para se preparar com confiança</p>
+        </div>
         <div class="recebe-grid">
             <div class="recebe-item">
                 <i class="fas fa-book-open"></i>
@@ -1171,160 +1377,38 @@
             </div>
             <div class="recebe-item">
                 <i class="fas fa-chart-bar"></i>
-                <h4>Diagnóstico de Desempenho</h4>
+                <h4>Diagnóstico NeuroCombat</h4>
                 <p>Avaliação inicial para identificar seu nível e direcionar a preparação.</p>
+            </div>
+            <div class="recebe-item">
+                <i class="fas fa-user-check"></i>
+                <h4>Plano Individual de Preparação</h4>
+                <p>Cada aluno recebe um plano personalizado com base no diagnóstico.</p>
+            </div>
+            <div class="recebe-item">
+                <i class="fas fa-award"></i>
+                <h4>Certificado NeuroCombat</h4>
+                <p>Certificado de conclusão do treinamento reconhecido pela Academy.</p>
             </div>
             <div class="recebe-item">
                 <i class="fab fa-whatsapp"></i>
                 <h4>Suporte via WhatsApp</h4>
                 <p>Acompanhamento exclusivo para tirar todas as suas dúvidas.</p>
             </div>
-            <div class="recebe-item">
-                <i class="fas fa-clipboard-check"></i>
-                <h4>Checklist Oficial</h4>
-                <p>Guia completo com todos os itens para o dia da avaliação.</p>
-            </div>
         </div>
     </div>
 </section>
 
 <!-- ============================================================
-     DIAGNÓSTICO NEUROCOMBAT DE DESEMPENHO
+     GARANTIA NEUROCOMBAT
      ============================================================ -->
-<section class="section" id="diagnostico-desempenho">
+<section class="section section-alt" id="garantia">
     <div class="container">
-        <div class="section-header">
-            <span class="section-badge">🧠 DIFERENCIAL NEUROCOMBAT</span>
-            <h2 class="section-title">Diagnóstico NeuroCombat de <span class="highlight">Desempenho</span></h2>
-            <p class="section-sub">Antes da preparação prática, você passa por uma avaliação completa</p>
-        </div>
-        <div class="diagnostico-grid">
-            <div class="diagnostico-text">
-                <h3>Identificamos seus pontos fortes e de melhoria</h3>
-                <p>O Diagnóstico NeuroCombat de Desempenho analisa:</p>
-                <div class="diagnostico-items">
-                    <div class="diagnostico-item">
-                        <i class="fas fa-brain"></i>
-                        <span>🧠 Nível cognitivo sobre legislação</span>
-                    </div>
-                    <div class="diagnostico-item">
-                        <i class="fas fa-bullseye"></i>
-                        <span>🎯 Erros técnicos de segurança</span>
-                    </div>
-                    <div class="diagnostico-item">
-                        <i class="fas fa-eye"></i>
-                        <span>👁️ Hábitos de manuseio</span>
-                    </div>
-                    <div class="diagnostico-item">
-                        <i class="fas fa-chart-line"></i>
-                        <span>📈 Pontos fortes e pontos de melhoria</span>
-                    </div>
-                </div>
-                <p style="margin-top: 16px; color: var(--text-light);">Entrega: um <strong>relatório simples</strong> mostrando seu nível e a <strong>trilha recomendada</strong>.</p>
-                <a href="#cta" class="btn-secondary" style="margin-top: 16px;">Quero fazer o diagnóstico</a>
-            </div>
-            <div class="diagnostico-visual">
-                <div class="diagnostico-step" style="border-left-color: var(--gold);">
-                    <span class="step-num">📋</span>
-                    <div class="step-text">
-                        <h4>Questionário Técnico</h4>
-                        <p>Avaliação do conhecimento teórico</p>
-                    </div>
-                </div>
-                <div class="diagnostico-step" style="border-left-color: var(--gold);">
-                    <span class="step-num">🎯</span>
-                    <div class="step-text">
-                        <h4>Avaliação Prática</h4>
-                        <p>Análise do manuseio e segurança</p>
-                    </div>
-                </div>
-                <div class="diagnostico-step" style="border-left-color: var(--gold);">
-                    <span class="step-num">📊</span>
-                    <div class="step-text">
-                        <h4>Relatório Personalizado</h4>
-                        <p>Nível identificado e trilha recomendada</p>
-                    </div>
-                </div>
-                <div class="diagnostico-step" style="border-left-color: var(--gold);">
-                    <span class="step-num">🚀</span>
-                    <div class="step-text">
-                        <h4>Início da Preparação</h4>
-                        <p>Plano individual alinhado ao seu nível</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ============================================================
-     JORNADA DO ALUNO
-     ============================================================ -->
-<section class="section section-alt" id="jornada">
-    <div class="container">
-        <h2 class="section-title">Sua jornada na <span class="highlight">NeuroCombat Academy</span></h2>
-        <p class="section-sub">Acompanhe cada etapa da sua preparação</p>
-        <div class="jornada-grid">
-            <div class="jornada-item">
-                <div class="jornada-num">1</div>
-                <h4>Diagnóstico Inicial</h4>
-                <p>Avaliamos seu conhecimento</p>
-            </div>
-            <div class="jornada-item">
-                <div class="jornada-num">2</div>
-                <h4>Nivelamento</h4>
-                <p>Você entra na trilha adequada</p>
-            </div>
-            <div class="jornada-item">
-                <div class="jornada-num">3</div>
-                <h4>Preparação Teórica</h4>
-                <p>Conteúdo EAD + apostila</p>
-            </div>
-            <div class="jornada-item">
-                <div class="jornada-num">4</div>
-                <h4>Treinamento Prático</h4>
-                <p>Treino seco e estande</p>
-            </div>
-            <div class="jornada-item">
-                <div class="jornada-num">5</div>
-                <h4>Simulação Oficial</h4>
-                <p>Avaliação completa</p>
-            </div>
-            <div class="jornada-item">
-                <div class="jornada-num">✅</div>
-                <h4>Aprovação Assistida</h4>
-                <p>Acompanhamento até o dia da avaliação</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ============================================================
-     CONHEÇA O INSTRUTOR
-     ============================================================ -->
-<section class="section" id="instrutor">
-    <div class="container">
-        <div class="about-grid">
-            <div class="about-image">
-                <img src="assets/images/nesio-profile.webp" alt="Nésio Augusto Ferreira - Instrutor NeuroCombat Academy" class="about-photo" loading="lazy">
-                <div class="about-credentials">
-                    <span>🏅 17+ anos Segurança Pública</span>
-                    <span>🎯 Instrutor Institucional</span>
-                    <span>🧠 Especialista em Biomecânica</span>
-                    <span>📚 Docência em Segurança Pública</span>
-                </div>
-            </div>
-            <div class="about-content">
-                <span class="about-tag">🎯 Seu Instrutor</span>
-                <h2>Nésio Augusto Ferreira</h2>
-                <p><strong>Instrutor de Armamento e Tiro Institucional</strong> • Especialista em Biomecânica e Psicofisiologia do Combate • Especialista em Docência em Segurança Pública.</p>
-                <p>Com mais de <strong>17 anos de atuação na Segurança Pública</strong>, Nésio desenvolveu uma metodologia própria que integra neurociência, fatores humanos e experiência operacional para preparar profissionais de alta performance.</p>
-                <div class="about-highlights">
-                    <div>✅ Formação baseada em experiência operacional real</div>
-                    <div>✅ Pesquisa aplicada em fatores humanos e desempenho</div>
-                    <div>✅ Metodologia exclusiva NeuroCombat</div>
-                </div>
-            </div>
+        <div class="garantia-box">
+            <span class="garantia-badge">🤝 Garantia NeuroCombat</span>
+            <h3>O aluno é acompanhado até o dia da <span style="color: var(--orange);">avaliação</span></h3>
+            <p>Diferente dos preparatórios comuns, a NeuroCombat Academy não abandona o aluno após o treinamento. Oferecemos <strong>acompanhamento contínuo até o dia da avaliação de capacidade técnica</strong>, com suporte para dúvidas, revisão de conteúdo e orientação final.</p>
+            <a href="#cta" class="btn-secondary">Quero essa preparação completa</a>
         </div>
     </div>
 </section>
@@ -1332,7 +1416,7 @@
 <!-- ============================================================
      DEPOIMENTOS
      ============================================================ -->
-<section class="section section-alt" id="depoimentos">
+<section class="section" id="depoimentos">
     <div class="container">
         <h2 class="section-title">Quem já <span class="highlight">vivenciou</span></h2>
         <p class="section-sub">O que profissionais dizem sobre o Programa NeuroCombat</p>
@@ -1368,7 +1452,7 @@
 <!-- ============================================================
      FAQ
      ============================================================ -->
-<section class="section" id="faq">
+<section class="section section-alt" id="faq">
     <div class="container">
         <h2 class="section-title">Perguntas <span class="highlight">Frequentes</span></h2>
         <div class="faq-grid">
@@ -1397,14 +1481,14 @@
 </section>
 
 <!-- ============================================================
-     PRÓXIMO PASSO: DRY FIRE
+     PRÓXIMA ETAPA: DRY FIRE
      ============================================================ -->
 <section class="section" id="dryfire">
     <div class="container">
         <div class="dryfire-box">
-            <span class="dryfire-badge">🚀 Em desenvolvimento</span>
-            <h3>Continue evoluindo após o <span style="color: var(--orange);">Laudo</span></h3>
-            <p>Depois da aprovação, sua evolução continua com o programa <strong>NeuroTáticas Dry Fire</strong>. Treinamento EAD para desenvolver técnica, precisão, tomada de decisão e fundamentos sem consumo de munição.</p>
+            <span class="dryfire-badge">🚀 Próxima etapa da sua evolução</span>
+            <h3>NeuroTáticas <span style="color: var(--orange);">Dry Fire</span></h3>
+            <p>Depois da aprovação no Laudo de Capacidade Técnica, o aluno pode evoluir para o <strong>Programa NeuroTáticas Dry Fire</strong>, voltado ao desenvolvimento contínuo da técnica, precisão e tomada de decisão.</p>
             <a href="https://wa.me/5524999599347?text=Olá! Quero entrar na lista de espera do Dry Fire." class="btn-secondary" target="_blank" rel="noopener">Entrar na Lista de Espera</a>
         </div>
     </div>
@@ -1423,6 +1507,7 @@
             <span><i class="fas fa-headset"></i> Suporte exclusivo</span>
             <span><i class="fas fa-flask"></i> Metodologia própria</span>
             <span><i class="fas fa-shield-alt"></i> Treinamento em estande</span>
+            <span><i class="fas fa-handshake"></i> Acompanhamento até a avaliação</span>
         </div>
     </div>
 </section>
