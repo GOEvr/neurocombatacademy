@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes">
+    
+    <title>Cadastro SisGCorp para compra de munições | NeuroCombat Academy</title>
+    
+    <meta name="description" content="A partir de 31 de agosto de 2026, o cadastro no SisGCorp será obrigatório para compra de munições. Saiba como se regularizar e evite bloqueios.">
+    <meta name="keywords" content="SisGCorp, cadastro SisGCorp, compra de munições, SICOVEM, DFPC, Exército Brasileiro, regularização">
+    <meta name="author" content="NeuroCombat Academy">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <meta name="theme-color" content="#0A0F1E">
+    
+    <link rel="canonical" href="https://neurocombatacademy.com.br/sisgcorp/">
+    
+    <!-- ===== FAVICON ===== -->
+    <link rel="icon" href="../assets/images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" href="../assets/images/favicon/apple-touch-icon.png">
+    
+    <!-- ===== MANIFEST ===== -->
+    <link rel="manifest" href="../manifest.webmanifest">
+    
+    <!-- ===== GOOGLE ANALYTICS 4 (GA4) ===== -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JQQEFP0JNQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-JQQEFP0JNQ');
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link rel="stylesheet" href="../assets/css/style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        /* ============================================================
+           ESTILOS ESPECÍFICOS PARA A PÁGINA SISGCORP
+           ============================================================ */
+        
+        .sisgcorp-hero {
+            padding: 120px 0 60px;
+            background: linear-gradient(135deg, #07131F 0%, #0D223B 50%, #1A2340 100%);
+            position: relative;
+            overflow: hidden;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+        }
+        
+        .sisgcorp-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(232, 122, 42, 0.06) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        
+        .sisgcorp-hero .container {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .sisgcorp-hero .hero-badge {
+            display: inline-block;
+            background: rgba(232, 122, 42, 0.15);
+            color: #E87A2A;
+            padding: 6px 20px;
+            border-radius: 60px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            border: 1px solid rgba(232, 122, 42, 0.15);
+        }
+        
+        .sisgcorp-hero h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(2.4rem, 5vw, 3.6rem);
+            color: #F1F5F9;
+            line-height: 1.1;
+            margin-bottom: 16px;
+        }
+        
+        .sisgcorp-hero h1 span {
+            color: #D4AF37;
+        }
+        
+        .sisgcorp-hero .subtitle {
+            font-size: 1.15rem;
+            color: #94A3B8;
+            max-width: 600px;
+            line-height: 1.7;
+            margin-bottom: 8px;
+        }
+        
+        .sisgcorp-hero .data-destaque {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: rgba(212, 175, 55, 0.06);
+            border: 1px solid rgba(212, 175, 55, 0.12);
+            border-radius: 12px;
+            padding: 12px 20px;
+            margin-top: 12px;
+        }
+        
+        .sisgcorp-hero .data-destaque .numero {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
+            color: #D4AF37;
+        }
+        
+        .sisgcorp-hero .data-destaque .texto {
+            color: #94A3B8;
+            font-size: 0.85rem;
+        }
+        
+        .sisgcorp-hero .data-destaque .texto strong {
+            color: #F1F5F9;
+        }
+        
+        .sisgcorp-content {
+            padding: 60px 0;
+        }
+        
+        .sisgcorp-content h2 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
+            color: #F1F5F9;
+            margin-bottom: 16px;
+        }
+        
+        .sisgcorp-content h2 .highlight {
+            color: #D4AF37;
+        }
+        
+        .sisgcorp-content p {
+            color: #94A3B8;
+            line-height: 1.8;
+            margin-bottom: 16px;
+            font-size: 1rem;
+        }
+        
+        .sisgcorp-content ul {
+            list-style: none;
+            margin: 16px 0 24px;
+        }
+        
+        .sisgcorp-content ul li {
+            color: #E0E8F0;
+            padding: 8px 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            font-size: 0.95rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+        }
+        
+        .sisgcorp-content ul li:last-child {
+            border-bottom: none;
+        }
+        
+        .sisgcorp-content ul li i {
+            color: #D4AF37;
+            margin-top: 4px;
+            flex-shrink: 0;
+        }
+        
+        .sisgcorp-content .box-destaque {
+            background: rgba(212, 175, 55, 0.04);
+            border-left: 3px solid #D4AF37;
+            padding: 20px 24px;
+            border-radius: 0 12px 12px 0;
+            margin: 24px 0;
+        }
+        
+        .sisgcorp-content .box-destaque p {
+            margin-bottom: 0;
+            color: #E0E8F0;
+        }
+        
+        .sisgcorp-content .box-destaque p strong {
+            color: #D4AF37;
+        }
+        
+        .sisgcorp-content .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 24px 0;
+        }
+        
+        .sisgcorp-content .grid-2 .card {
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            transition: all 0.3s ease;
+        }
+        
+        .sisgcorp-content .grid-2 .card:hover {
+            border-color: rgba(212, 175, 55, 0.15);
+            transform: translateY(-4px);
+        }
+        
+        .sisgcorp-content .grid-2 .card h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.4rem;
+            color: #D4AF37;
+            margin-bottom: 8px;
+        }
+        
+        .sisgcorp-content .grid-2 .card p {
+            color: #94A3B8;
+            font-size: 0.9rem;
+            margin-bottom: 0;
+        }
+        
+        .sisgcorp-content .grid-2 .card i {
+            font-size: 2rem;
+            color: #D4AF37;
+            margin-bottom: 8px;
+            display: block;
+        }
+        
+        .sisgcorp-content .passos {
+            counter-reset: step;
+            margin: 24px 0;
+        }
+        
+        .sisgcorp-content .passos .passo {
+            display: flex;
+            gap: 20px;
+            padding: 16px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+        }
+        
+        .sisgcorp-content .passos .passo:last-child {
+            border-bottom: none;
+        }
+        
+        .sisgcorp-content .passos .passo .num {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
+            color: #D4AF37;
+            min-width: 44px;
+            opacity: 0.5;
+        }
+        
+        .sisgcorp-content .passos .passo .conteudo h4 {
+            color: #F1F5F9;
+            font-size: 1rem;
+            margin-bottom: 4px;
+        }
+        
+        .sisgcorp-content .passos .passo .conteudo p {
+            color: #94A3B8;
+            font-size: 0.9rem;
+            margin-bottom: 0;
+        }
+        
+        .sisgcorp-content .aviso {
+            background: rgba(232, 122, 42, 0.06);
+            border: 1px solid rgba(232, 122, 42, 0.12);
+            border-radius: 16px;
+            padding: 24px 28px;
+            margin: 24px 0;
+        }
+        
+        .sisgcorp-content .aviso h4 {
+            color: #E87A2A;
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+        
+        .sisgcorp-content .aviso p {
+            color: #94A3B8;
+            font-size: 0.9rem;
+            margin-bottom: 0;
+        }
+        
+        .sisgcorp-content .aviso p strong {
+            color: #F1F5F9;
+        }
+        
+        .sisgcorp-cta {
+            text-align: center;
+            padding: 60px 0;
+            background: linear-gradient(135deg, #07131F, #0D223B);
+            border-top: 1px solid rgba(212, 175, 55, 0.08);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.08);
+        }
+        
+        .sisgcorp-cta h2 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2.4rem;
+            color: #F1F5F9;
+            margin-bottom: 12px;
+        }
+        
+        .sisgcorp-cta h2 span {
+            color: #D4AF37;
+        }
+        
+        .sisgcorp-cta p {
+            color: #94A3B8;
+            max-width: 500px;
+            margin: 0 auto 24px;
+            font-size: 1.05rem;
+        }
+        
+        .sisgcorp-cta .btn-voltar {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: transparent;
+            color: #D4AF37;
+            padding: 14px 32px;
+            border-radius: 60px;
+            border: 2px solid #D4AF37;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+        
+        .sisgcorp-cta .btn-voltar:hover {
+            background: #D4AF37;
+            color: #0A0F1E;
+        }
+        
+        .sisgcorp-cta .btn-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #25D366;
+            color: #fff;
+            padding: 14px 32px;
+            border-radius: 60px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            margin-left: 12px;
+        }
+        
+        .sisgcorp-cta .btn-whatsapp:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 24px rgba(37, 211, 102, 0.3);
+        }
+        
+        .sisgcorp-cta .btn-whatsapp i {
+            font-size: 1.2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .sisgcorp-hero {
+                padding: 100px 0 40px;
+                min-height: auto;
+            }
+            .sisgcorp-content .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .sisgcorp-cta .btn-whatsapp {
+                margin-left: 0;
+                margin-top: 12px;
+                width: 100%;
+                justify-content: center;
+            }
+            .sisgcorp-cta .btn-voltar {
+                width: 100%;
+                justify-content: center;
+            }
+            .sisgcorp-hero .data-destaque {
+                flex-direction: column;
+                text-align: center;
+            }
+            .sisgcorp-content .passos .passo {
+                flex-direction: column;
+                gap: 4px;
+            }
+            .sisgcorp-content .passos .passo .num {
+                font-size: 1.4rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .sisgcorp-hero h1 {
+                font-size: 1.8rem;
+            }
+            .sisgcorp-hero .subtitle {
+                font-size: 0.95rem;
+            }
+            .sisgcorp-hero .data-destaque .numero {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">⚡ Ciência · Técnica · Performance</div>
+
+<!-- HEADER -->
+<header class="header" id="header">
+    <div class="container">
+        <a href="/" class="logo-container">
+            <span class="logo-text">NEURO<span>COMBAT</span></span>
+            <span class="logo-sub">ACADEMY</span>
+        </a>
+        <nav class="nav-menu" aria-label="Menu principal">
+            <ul>
+                <li><a href="/#sobre">Sobre</a></li>
+                <li><a href="/#curso">Metodologia</a></li>
+                <li><a href="/#depoimentos">Depoimentos</a></li>
+                <li><a href="/#faq">FAQ</a></li>
+            </ul>
+        </nav>
+        <a href="/#cta" class="btn-header">Quero iniciar minha preparação</a>
+    </div>
+</header>
+
+<!-- ============================================================
+     HERO SISGCORP
+     ============================================================ -->
+<section class="sisgcorp-hero">
+    <div class="container">
+        <div class="hero-badge">⚡ ATENÇÃO: NOVA EXIGÊNCIA 2026</div>
+        <h1>Cadastro SisGCorp para<br><span>compra de munições</span></h1>
+        <p class="subtitle">A partir de <strong style="color:#F1F5F9;">31 de agosto de 2026</strong>, o cadastro atualizado no SisGCorp será obrigatório para a compra de munições em estabelecimentos autorizados.</p>
+        <div class="data-destaque">
+            <span class="numero">31/08/2026</span>
+            <span class="texto"><strong>Data limite</strong> para regularização cadastral</span>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     CONTEÚDO PRINCIPAL
+     ============================================================ -->
+<section class="sisgcorp-content">
+    <div class="container">
+
+        <h2>O que é o <span class="highlight">SisGCorp</span>?</h2>
+        <p>O SisGCorp é o sistema utilizado no âmbito do Sistema de Fiscalização de Produtos Controlados pelo Exército Brasileiro para serviços, registros e procedimentos relacionados a produtos controlados.[reference:0]</p>
+        <p>Para aquisição de munições, o cadastro atualizado passa a ter papel central porque será utilizado na validação das operações realizadas no comércio. O sistema confirma os dados do comprador, vincula informações ao CPF e contribui para a rastreabilidade das operações.[reference:1]</p>
+
+        <div class="box-destaque">
+            <p><strong>⚠️ Importante:</strong> Se os dados não estiverem regularizados ou atualizados no SisGCorp, a compra de munição poderá ser bloqueada diretamente no estabelecimento comercial.[reference:2]</p>
+        </div>
+
+        <h2>O que é o novo <span class="highlight">SICOVEM</span>?</h2>
+        <p>O SICOVEM é o Sistema de Controle de Vendas e Estoque de Munições. Com a nova integração ao SisGCorp, o objetivo é aperfeiçoar o controle das vendas, cruzando os dados do comprador em tempo real no momento da aquisição.[reference:3]</p>
+        <p>Além disso, o sistema passa a enviar um e-mail automático sempre que uma operação de venda for iniciada com o CPF do comprador. Esse aviso eletrônico é um ponto importante de segurança, permitindo que o cidadão identifique tentativas de fraude ou uso indevido de seus dados.[reference:4]</p>
+
+        <h2>Quem precisa fazer o <span class="highlight">cadastro</span>?</h2>
+        <p>O cadastro SisGCorp para compra de munições deve ser observado por todas as pessoas que possuem arma registrada ou pretendem adquirir munições, especialmente quem possui arma vinculada aos seguintes sistemas[reference:5]:</p>
+        <ul>
+            <li><i class="fas fa-check-circle"></i> SIGMA (Exército Brasileiro)</li>
+            <li><i class="fas fa-check-circle"></i> Marinha do Brasil</li>
+            <li><i class="fas fa-check-circle"></i> Força Aérea Brasileira</li>
+            <li><i class="fas fa-check-circle"></i> SINARM</li>
+            <li><i class="fas fa-check-circle"></i> SINARM-CAC</li>
+        </ul>
+        <p>Na prática, a exigência alcança cidadãos que possuem arma registrada e que desejam comprar munição em estabelecimento comercial autorizado.[reference:6]</p>
+
+        <div class="aviso">
+            <h4><i class="fas fa-exclamation-triangle"></i> Fique atento!</h4>
+            <p>Quem deixar para regularizar somente no momento da compra pode enfrentar <strong>bloqueio, atraso ou necessidade de atualização emergencial dos dados</strong>.[reference:7]</p>
+        </div>
+
+        <h2>Como fazer o primeiro acesso ao <span class="highlight">SisGCorp</span>?</h2>
+        <p>O primeiro acesso deve ser feito pelo link oficial disponível no site da DFPC, na área de tutoriais do SisGCorp. O acesso é integrado à plataforma <strong>Gov.br</strong>, por isso o usuário precisará de uma conta válida.[reference:8]</p>
+
+        <div class="passos">
+            <div class="passo">
+                <span class="num">1</span>
+                <div class="conteudo">
+                    <h4>Acesse o SisGCorp</h4>
+                    <p>Pelo link oficial disponível no site da DFPC</p>
+                </div>
+            </div>
+            <div class="passo">
+                <span class="num">2</span>
+                <div class="conteudo">
+                    <h4>Entre com Gov.br</h4>
+                    <p>Utilize uma conta Gov.br válida, conforme o nível exigido pelo sistema[reference:9]</p>
+                </div>
+            </div>
+            <div class="passo">
+                <span class="num">3</span>
+                <div class="conteudo">
+                    <h4>Informe seus dados</h4>
+                    <p>Preencha nome, CPF, documento, telefone, endereço com CEP, e-mail atualizado e foto[reference:10]</p>
+                </div>
+            </div>
+            <div class="passo">
+                <span class="num">4</span>
+                <div class="conteudo">
+                    <h4>Revise e conclua</h4>
+                    <p>Aceite os termos de privacidade e revise as informações antes de concluir[reference:11]</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>Quais dados precisam estar <span class="highlight">atualizados</span>?</h2>
+        <p>Para evitar bloqueio no momento da compra, o cadastro SisGCorp deve conter informações corretas e atualizadas[reference:12]:</p>
+        <ul>
+            <li><i class="fas fa-check-circle"></i> Nome completo</li>
+            <li><i class="fas fa-check-circle"></i> CPF</li>
+            <li><i class="fas fa-check-circle"></i> Documento de identificação</li>
+            <li><i class="fas fa-check-circle"></i> Telefone</li>
+            <li><i class="fas fa-check-circle"></i> E-mail (atenção especial, pois será usado para avisos de segurança)[reference:13]</li>
+            <li><i class="fas fa-check-circle"></i> Endereço completo com CEP</li>
+            <li><i class="fas fa-check-circle"></i> Foto</li>
+            <li><i class="fas fa-check-circle"></i> Dados vinculados ao cadastro de armas</li>
+        </ul>
+
+        <div class="box-destaque">
+            <p><strong>💡 Dica:</strong> O e-mail merece atenção especial, porque será usado para envio automático de aviso quando uma operação de venda for iniciada com o CPF do comprador. Se o e-mail estiver errado ou desatualizado, você pode perder uma informação importante de segurança.[reference:14]</p>
+        </div>
+
+        <h2>O que acontece se o cadastro estiver <span class="highlight">desatualizado</span>?</h2>
+        <p>Se os dados não estiverem regularizados ou atualizados no SisGCorp, a compra de munição poderá ser <strong style="color:#E87A2A;">bloqueada no estabelecimento comercial</strong>.[reference:15]</p>
+        <p>Isso pode acontecer porque o novo SICOVEM irá cruzar os dados do comprador em tempo real. Se houver divergência, ausência de cadastro inicial ou inconsistência nas informações, a operação pode não ser validada.[reference:16]</p>
+        <p>O problema pode ser simples, como e-mail antigo, telefone desatualizado ou endereço incompleto, mas ainda assim pode impedir a conclusão da compra.[reference:17]</p>
+
+        <div class="aviso" style="background:rgba(212,175,55,0.04);border-color:rgba(212,175,55,0.12);">
+            <h4 style="color:#D4AF37;"><i class="fas fa-lightbulb"></i> Recomendação</h4>
+            <p>Não deixe para a última hora. Sistemas públicos podem apresentar instabilidade, exigência de atualização de conta Gov.br, necessidade de correção de dados pessoais ou divergência de informações cadastrais.[reference:18]</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ============================================================
+     CTA FINAL
+     ============================================================ -->
+<section class="sisgcorp-cta">
+    <div class="container">
+        <h2>Precisa de <span>ajuda</span> com o cadastro?</h2>
+        <p>Entre em contato com a NeuroCombat Academy e receba orientação sobre a regularização no SisGCorp.</p>
+        <div>
+            <a href="/" class="btn-voltar"><i class="fas fa-arrow-left"></i> Voltar para a página inicial</a>
+            <a href="https://wa.me/5524999599347?text=Olá! Quero saber mais sobre o cadastro SisGCorp para compra de munições." class="btn-whatsapp" target="_blank" rel="noopener">
+                <i class="fab fa-whatsapp"></i> FALAR COM ESPECIALISTA
+            </a>
+        </div>
+        <p style="margin-top:24px;font-size:0.7rem;color:#475569;">
+            Fonte: <a href="https://posseporte.com.br/cadastro-sisgcorp-para-compra-de-municoes-nova-exigencia-em-2026/" target="_blank" style="color:#D4AF37;text-decoration:none;">posseporte.com.br</a>
+        </p>
+    </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <span class="footer-logo">NEURO<span>COMBAT</span></span>
+                <span class="footer-sub">ACADEMY</span>
+                <p>Metodologia própria que integra neurociência, fatores humanos e experiência operacional para desenvolver profissionais preparados para ambientes críticos.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Links rápidos</h4>
+                <ul>
+                    <li><a href="/#sobre">Sobre</a></li>
+                    <li><a href="/#curso">Metodologia</a></li>
+                    <li><a href="/#depoimentos">Depoimentos</a></li>
+                    <li><a href="/#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Redes sociais</h4>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/neurocombatacademy/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/5524999599347?text=Olá! Quero conhecer a metodologia da NeuroCombat Academy." target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 NeuroCombat Academy. Todos os direitos reservados.</p>
+            <p>Metodologia NeuroCombat · Nésio Augusto Ferreira</p>
+        </div>
+    </div>
+</footer>
+
+<!-- ============================================================
+     BARRA FIXA
+     ============================================================ -->
+<div class="fixed-bar">
+    <a href="https://wa.me/5524999599347?text=Olá! Quero saber mais sobre o cadastro SisGCorp para compra de munições." class="fixed-item" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span>WhatsApp</span>
+    </a>
+    <a href="#top" class="fixed-item highlight" aria-label="Topo">
+        <i class="fas fa-arrow-up"></i>
+        <span>Topo</span>
+    </a>
+</div>
+
+<script src="../assets/js/main.js" defer></script>
+
+</body>
+  </html>
