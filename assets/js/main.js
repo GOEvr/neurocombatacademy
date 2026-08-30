@@ -93,10 +93,15 @@
     }
 
     // ============================================================
-    // POP-UP SISGCORP (ADICIONADO AQUI)
+    // POP-UP SISGCORP (VERSÃO ATUALIZADA)
     // ============================================================
     (function() {
         'use strict';
+
+        // ===== NÃO EXIBE O POP-UP DENTRO DA PRÓPRIA PÁGINA SISGCORP =====
+        if (window.location.pathname.includes('/sisgcorp')) {
+            return;
+        }
 
         // Verifica se o pop-up já foi exibido nesta sessão
         if (sessionStorage.getItem('sisgcorp_popup_shown')) {
@@ -181,7 +186,7 @@
             `;
             badge.textContent = '⚡ ATENÇÃO: NOVA EXIGÊNCIA 2026';
 
-            // Título
+            // ===== TÍTULO ATUALIZADO =====
             const title = document.createElement('h2');
             title.style.cssText = `
                 font-family: 'Bebas Neue', sans-serif;
@@ -190,9 +195,9 @@
                 margin: 0 0 8px 0;
                 letter-spacing: 1px;
             `;
-            title.innerHTML = 'Cadastro SisGCorp para<br><span style="color:#D4AF37;">compra de munições</span>';
+            title.innerHTML = 'Você possui uma <span style="color:#D4AF37;">arma de fogo registrada?</span>';
 
-            // Descrição
+            // ===== DESCRIÇÃO ATUALIZADA =====
             const desc = document.createElement('p');
             desc.style.cssText = `
                 color: #94A3B8;
@@ -200,7 +205,7 @@
                 line-height: 1.7;
                 margin: 8px 0 16px 0;
             `;
-            desc.textContent = 'A partir de 31 de agosto de 2026, o cadastro atualizado no SisGCorp será obrigatório para a compra de munições. Quem não estiver regularizado pode ter a compra bloqueada.';
+            desc.textContent = 'Proprietários de armas registradas na Polícia Federal e CACs devem verificar e atualizar seu cadastro no SisGCorp/SINARM. A regularização será necessária para compra de munições e outros serviços relacionados às armas de fogo.';
 
             // Data destaque
             const dataBox = document.createElement('div');
@@ -263,7 +268,9 @@
                 btnSaiba.style.transform = 'translateY(0)';
                 btnSaiba.style.boxShadow = '0 8px 20px rgba(232, 122, 42, 0.25)';
             };
-            btnSaiba.innerHTML = '<i class="fas fa-arrow-right"></i> SAIBA MAIS';
+            
+            // ===== BOTÃO ATUALIZADO =====
+            btnSaiba.innerHTML = '<i class="fas fa-shield-alt"></i> ENTENDER A NOVA EXIGÊNCIA';
 
             const btnDepois = document.createElement('button');
             btnDepois.style.cssText = `
@@ -291,7 +298,7 @@
             botoes.appendChild(btnSaiba);
             botoes.appendChild(btnDepois);
 
-            // Rodapé do pop-up
+            // ===== RODAPÉ ATUALIZADO =====
             const footer = document.createElement('div');
             footer.style.cssText = `
                 margin-top: 16px;
@@ -300,9 +307,9 @@
                 text-align: center;
             `;
             footer.innerHTML = `
-                <p style="color:#475569;font-size:0.7rem;margin:0;">
-                    O cadastro SisGCorp será obrigatório para compra de munições a partir de 31/08/2026.
-                    <br>Fonte: <a href="https://posseporte.com.br/cadastro-sisgcorp-para-compra-de-municoes-nova-exigencia-em-2026/" target="_blank" style="color:#D4AF37;text-decoration:none;">posseporte.com.br</a>
+                <p style="color:#64748B;font-size:0.72rem;margin:0;line-height:1.5;">
+                    Conteúdo elaborado pela <strong style="color:#D4AF37;">NeuroCombat Academy</strong>
+                    com base em informações oficiais da Polícia Federal, DFPC e legislação vigente.
                 </p>
             `;
 
