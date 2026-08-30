@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes">
     
-    <title>Cadastro SisGCorp para compra de munições | NeuroCombat Academy</title>
+    <title>Cadastro obrigatório no SisGCorp / SINARM em 2026 | NeuroCombat Academy</title>
     
-    <meta name="description" content="A partir de 31 de agosto de 2026, o cadastro no SisGCorp será obrigatório para compra de munições. Saiba como se regularizar e evite bloqueios.">
-    <meta name="keywords" content="SisGCorp, cadastro SisGCorp, compra de munições, SICOVEM, DFPC, Exército Brasileiro, regularização">
+    <!-- ===== META DESCRIPTION (ATUALIZADA) ===== -->
+    <meta name="description" content="Guia completo sobre o cadastro obrigatório no SisGCorp e SINARM em 2026 para proprietários de armas de fogo. Saiba quem precisa se cadastrar, como fazer e evitar bloqueios na compra de munições.">
+    
+    <meta name="keywords" content="SisGCorp, cadastro SisGCorp, SINARM, compra de munições, SICOVEM, DFPC, Exército Brasileiro, regularização, CRAF, porte de arma">
     <meta name="author" content="NeuroCombat Academy">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
     <meta name="theme-color" content="#0A0F1E">
@@ -364,6 +366,37 @@
             font-size: 1.2rem;
         }
         
+        /* ===== SEÇÃO CENTRAL DO PROPRIETÁRIO ===== */
+        .central-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin: 16px 0 24px;
+            max-width: 700px;
+        }
+        
+        .central-grid .central-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: rgba(255, 255, 255, 0.02);
+            padding: 12px 16px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            color: #E0E8F0;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+        
+        .central-grid .central-item:hover {
+            border-color: rgba(212, 175, 55, 0.15);
+            background: rgba(255, 255, 255, 0.04);
+        }
+        
+        .central-grid .central-item i {
+            color: #D4AF37;
+        }
+        
         @media (max-width: 768px) {
             .sisgcorp-hero {
                 padding: 100px 0 40px;
@@ -392,6 +425,9 @@
             }
             .sisgcorp-content .passos .passo .num {
                 font-size: 1.4rem;
+            }
+            .central-grid {
+                grid-template-columns: 1fr;
             }
         }
         
@@ -438,8 +474,13 @@
 <section class="sisgcorp-hero">
     <div class="container">
         <div class="hero-badge">⚡ ATENÇÃO: NOVA EXIGÊNCIA 2026</div>
-        <h1>Cadastro SisGCorp para<br><span>compra de munições</span></h1>
-        <p class="subtitle">A partir de <strong style="color:#F1F5F9;">31 de agosto de 2026</strong>, o cadastro atualizado no SisGCorp será obrigatório para a compra de munições em estabelecimentos autorizados.</p>
+        
+        <!-- ===== TÍTULO ATUALIZADO ===== -->
+        <h1>Cadastro obrigatório no SisGCorp / SINARM em 2026</h1>
+        
+        <!-- ===== SUBTÍTULO ATUALIZADO ===== -->
+        <p class="subtitle">Se você possui uma arma de fogo registrada, precisa verificar sua situação cadastral para utilizar os serviços da Polícia Federal, incluindo a compra de munições.</p>
+        
         <div class="data-destaque">
             <span class="numero">31/08/2026</span>
             <span class="texto"><strong>Data limite</strong> para regularização cadastral</span>
@@ -453,36 +494,43 @@
 <section class="sisgcorp-content">
     <div class="container">
 
+        <!-- ===== AVISO DE DESTAQUE (NOVO) ===== -->
+        <div class="aviso" style="background:rgba(232,122,42,0.08);border-color:rgba(232,122,42,0.2);">
+            <h4><i class="fas fa-exclamation-triangle"></i> ATENÇÃO</h4>
+            <p>
+                A exigência não se limita aos CACs. Proprietários de armas registradas na Polícia Federal também devem verificar e manter seus dados atualizados no sistema.
+            </p>
+        </div>
+
         <h2>O que é o <span class="highlight">SisGCorp</span>?</h2>
-        <p>O SisGCorp é o sistema utilizado no âmbito do Sistema de Fiscalização de Produtos Controlados pelo Exército Brasileiro para serviços, registros e procedimentos relacionados a produtos controlados.[reference:0]</p>
-        <p>Para aquisição de munições, o cadastro atualizado passa a ter papel central porque será utilizado na validação das operações realizadas no comércio. O sistema confirma os dados do comprador, vincula informações ao CPF e contribui para a rastreabilidade das operações.[reference:1]</p>
+        <p>O SisGCorp é o sistema utilizado no âmbito do Sistema de Fiscalização de Produtos Controlados pelo Exército Brasileiro para serviços, registros e procedimentos relacionados a produtos controlados.</p>
+        <p>Para aquisição de munições, o cadastro atualizado passa a ter papel central porque será utilizado na validação das operações realizadas no comércio. O sistema confirma os dados do comprador, vincula informações ao CPF e contribui para a rastreabilidade das operações.</p>
 
         <div class="box-destaque">
-            <p><strong>⚠️ Importante:</strong> Se os dados não estiverem regularizados ou atualizados no SisGCorp, a compra de munição poderá ser bloqueada diretamente no estabelecimento comercial.[reference:2]</p>
+            <p><strong>⚠️ Importante:</strong> Se os dados não estiverem regularizados ou atualizados no SisGCorp, a compra de munição poderá ser bloqueada diretamente no estabelecimento comercial.</p>
         </div>
 
         <h2>O que é o novo <span class="highlight">SICOVEM</span>?</h2>
-        <p>O SICOVEM é o Sistema de Controle de Vendas e Estoque de Munições. Com a nova integração ao SisGCorp, o objetivo é aperfeiçoar o controle das vendas, cruzando os dados do comprador em tempo real no momento da aquisição.[reference:3]</p>
-        <p>Além disso, o sistema passa a enviar um e-mail automático sempre que uma operação de venda for iniciada com o CPF do comprador. Esse aviso eletrônico é um ponto importante de segurança, permitindo que o cidadão identifique tentativas de fraude ou uso indevido de seus dados.[reference:4]</p>
+        <p>O SICOVEM é o Sistema de Controle de Vendas e Estoque de Munições. Com a nova integração ao SisGCorp, o objetivo é aperfeiçoar o controle das vendas, cruzando os dados do comprador em tempo real no momento da aquisição.</p>
+        <p>Além disso, o sistema passa a enviar um e-mail automático sempre que uma operação de venda for iniciada com o CPF do comprador. Esse aviso eletrônico é um ponto importante de segurança, permitindo que o cidadão identifique tentativas de fraude ou uso indevido de seus dados.</p>
 
         <h2>Quem precisa fazer o <span class="highlight">cadastro</span>?</h2>
-        <p>O cadastro SisGCorp para compra de munições deve ser observado por todas as pessoas que possuem arma registrada ou pretendem adquirir munições, especialmente quem possui arma vinculada aos seguintes sistemas[reference:5]:</p>
+        
+        <!-- ===== SEÇÃO "QUEM PRECISA FAZER O CADASTRO" ATUALIZADA ===== -->
         <ul>
-            <li><i class="fas fa-check-circle"></i> SIGMA (Exército Brasileiro)</li>
-            <li><i class="fas fa-check-circle"></i> Marinha do Brasil</li>
-            <li><i class="fas fa-check-circle"></i> Força Aérea Brasileira</li>
-            <li><i class="fas fa-check-circle"></i> SINARM</li>
-            <li><i class="fas fa-check-circle"></i> SINARM-CAC</li>
+            <li>Proprietários de arma registrada no SINARM (defesa pessoal).</li>
+            <li>Colecionadores, Atiradores e Caçadores (CAC).</li>
+            <li>Militares e agentes públicos quando utilizarem serviços vinculados ao SINARM ou SINARM-CAC.</li>
+            <li>Quem pretende adquirir munições em estabelecimentos autorizados.</li>
         </ul>
-        <p>Na prática, a exigência alcança cidadãos que possuem arma registrada e que desejam comprar munição em estabelecimento comercial autorizado.[reference:6]</p>
 
         <div class="aviso">
             <h4><i class="fas fa-exclamation-triangle"></i> Fique atento!</h4>
-            <p>Quem deixar para regularizar somente no momento da compra pode enfrentar <strong>bloqueio, atraso ou necessidade de atualização emergencial dos dados</strong>.[reference:7]</p>
+            <p>Quem deixar para regularizar somente no momento da compra pode enfrentar <strong>bloqueio, atraso ou necessidade de atualização emergencial dos dados</strong>.</p>
         </div>
 
         <h2>Como fazer o primeiro acesso ao <span class="highlight">SisGCorp</span>?</h2>
-        <p>O primeiro acesso deve ser feito pelo link oficial disponível no site da DFPC, na área de tutoriais do SisGCorp. O acesso é integrado à plataforma <strong>Gov.br</strong>, por isso o usuário precisará de uma conta válida.[reference:8]</p>
+        <p>O primeiro acesso deve ser feito pelo link oficial disponível no site da DFPC, na área de tutoriais do SisGCorp. O acesso é integrado à plataforma <strong>Gov.br</strong>, por isso o usuário precisará de uma conta válida.</p>
 
         <div class="passos">
             <div class="passo">
@@ -496,50 +544,76 @@
                 <span class="num">2</span>
                 <div class="conteudo">
                     <h4>Entre com Gov.br</h4>
-                    <p>Utilize uma conta Gov.br válida, conforme o nível exigido pelo sistema[reference:9]</p>
+                    <p>Utilize uma conta Gov.br válida, conforme o nível exigido pelo sistema</p>
                 </div>
             </div>
             <div class="passo">
                 <span class="num">3</span>
                 <div class="conteudo">
                     <h4>Informe seus dados</h4>
-                    <p>Preencha nome, CPF, documento, telefone, endereço com CEP, e-mail atualizado e foto[reference:10]</p>
+                    <p>Preencha nome, CPF, documento, telefone, endereço com CEP, e-mail atualizado e foto</p>
                 </div>
             </div>
             <div class="passo">
                 <span class="num">4</span>
                 <div class="conteudo">
                     <h4>Revise e conclua</h4>
-                    <p>Aceite os termos de privacidade e revise as informações antes de concluir[reference:11]</p>
+                    <p>Aceite os termos de privacidade e revise as informações antes de concluir</p>
                 </div>
             </div>
         </div>
 
         <h2>Quais dados precisam estar <span class="highlight">atualizados</span>?</h2>
-        <p>Para evitar bloqueio no momento da compra, o cadastro SisGCorp deve conter informações corretas e atualizadas[reference:12]:</p>
+        <p>Para evitar bloqueio no momento da compra, o cadastro SisGCorp deve conter informações corretas e atualizadas:</p>
         <ul>
             <li><i class="fas fa-check-circle"></i> Nome completo</li>
             <li><i class="fas fa-check-circle"></i> CPF</li>
             <li><i class="fas fa-check-circle"></i> Documento de identificação</li>
             <li><i class="fas fa-check-circle"></i> Telefone</li>
-            <li><i class="fas fa-check-circle"></i> E-mail (atenção especial, pois será usado para avisos de segurança)[reference:13]</li>
+            <li><i class="fas fa-check-circle"></i> E-mail (atenção especial, pois será usado para avisos de segurança)</li>
             <li><i class="fas fa-check-circle"></i> Endereço completo com CEP</li>
             <li><i class="fas fa-check-circle"></i> Foto</li>
             <li><i class="fas fa-check-circle"></i> Dados vinculados ao cadastro de armas</li>
         </ul>
 
         <div class="box-destaque">
-            <p><strong>💡 Dica:</strong> O e-mail merece atenção especial, porque será usado para envio automático de aviso quando uma operação de venda for iniciada com o CPF do comprador. Se o e-mail estiver errado ou desatualizado, você pode perder uma informação importante de segurança.[reference:14]</p>
+            <p><strong>💡 Dica:</strong> O e-mail merece atenção especial, porque será usado para envio automático de aviso quando uma operação de venda for iniciada com o CPF do comprador. Se o e-mail estiver errado ou desatualizado, você pode perder uma informação importante de segurança.</p>
         </div>
 
         <h2>O que acontece se o cadastro estiver <span class="highlight">desatualizado</span>?</h2>
-        <p>Se os dados não estiverem regularizados ou atualizados no SisGCorp, a compra de munição poderá ser <strong style="color:#E87A2A;">bloqueada no estabelecimento comercial</strong>.[reference:15]</p>
-        <p>Isso pode acontecer porque o novo SICOVEM irá cruzar os dados do comprador em tempo real. Se houver divergência, ausência de cadastro inicial ou inconsistência nas informações, a operação pode não ser validada.[reference:16]</p>
-        <p>O problema pode ser simples, como e-mail antigo, telefone desatualizado ou endereço incompleto, mas ainda assim pode impedir a conclusão da compra.[reference:17]</p>
+        <p>Se os dados não estiverem regularizados ou atualizados no SisGCorp, a compra de munição poderá ser <strong style="color:#E87A2A;">bloqueada no estabelecimento comercial</strong>.</p>
+        <p>Isso pode acontecer porque o novo SICOVEM irá cruzar os dados do comprador em tempo real. Se houver divergência, ausência de cadastro inicial ou inconsistência nas informações, a operação pode não ser validada.</p>
+        <p>O problema pode ser simples, como e-mail antigo, telefone desatualizado ou endereço incompleto, mas ainda assim pode impedir a conclusão da compra.</p>
 
         <div class="aviso" style="background:rgba(212,175,55,0.04);border-color:rgba(212,175,55,0.12);">
             <h4 style="color:#D4AF37;"><i class="fas fa-lightbulb"></i> Recomendação</h4>
-            <p>Não deixe para a última hora. Sistemas públicos podem apresentar instabilidade, exigência de atualização de conta Gov.br, necessidade de correção de dados pessoais ou divergência de informações cadastrais.[reference:18]</p>
+            <p>Não deixe para a última hora. Sistemas públicos podem apresentar instabilidade, exigência de atualização de conta Gov.br, necessidade de correção de dados pessoais ou divergência de informações cadastrais.</p>
+        </div>
+
+        <!-- ===== SEÇÃO "CENTRAL DO PROPRIETÁRIO DE ARMA" (NOVA) ===== -->
+        <h2>Central do Proprietário de Arma</h2>
+        <p>A NeuroCombat Academy reúne informações oficiais sobre documentação, legislação e procedimentos relacionados às armas de fogo.</p>
+        <div class="central-grid">
+            <div class="central-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Cadastro SisGCorp / SINARM</span>
+            </div>
+            <div class="central-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Compra de munições</span>
+            </div>
+            <div class="central-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Renovação de CRAF</span>
+            </div>
+            <div class="central-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Registro e transferência de armas</span>
+            </div>
+            <div class="central-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Alertas e mudanças na legislação</span>
+            </div>
         </div>
 
     </div>
@@ -550,16 +624,23 @@
      ============================================================ -->
 <section class="sisgcorp-cta">
     <div class="container">
-        <h2>Precisa de <span>ajuda</span> com o cadastro?</h2>
+        <h2>Precisa de <span>orientação</span> sobre o cadastro?</h2>
         <p>Entre em contato com a NeuroCombat Academy e receba orientação sobre a regularização no SisGCorp.</p>
         <div>
             <a href="/" class="btn-voltar"><i class="fas fa-arrow-left"></i> Voltar para a página inicial</a>
-            <a href="https://wa.me/5524999599347?text=Olá! Quero saber mais sobre o cadastro SisGCorp para compra de munições." class="btn-whatsapp" target="_blank" rel="noopener">
-                <i class="fab fa-whatsapp"></i> FALAR COM ESPECIALISTA
+            
+            <!-- ===== BOTÃO WHATSAPP ATUALIZADO ===== -->
+            <a href="https://wa.me/5524999599347?text=Olá! Quero orientação da NeuroCombat Academy sobre o cadastro obrigatório no SisGCorp/SINARM 2026." class="btn-whatsapp" target="_blank" rel="noopener">
+                <i class="fab fa-whatsapp"></i> Receber orientação sobre o SisGCorp
             </a>
         </div>
+        
+        <!-- ===== RODAPÉ DE FONTES ATUALIZADO ===== -->
         <p style="margin-top:24px;font-size:0.7rem;color:#475569;">
-            Fonte: <a href="https://posseporte.com.br/cadastro-sisgcorp-para-compra-de-municoes-nova-exigencia-em-2026/" target="_blank" style="color:#D4AF37;text-decoration:none;">posseporte.com.br</a>
+            Fontes consultadas:<br>
+            • Polícia Federal.<br>
+            • DFPC – Exército Brasileiro.<br>
+            • Normas oficiais sobre SisGCorp e SICOVEM.
         </p>
     </div>
 </section>
@@ -603,7 +684,8 @@
      BARRA FIXA
      ============================================================ -->
 <div class="fixed-bar">
-    <a href="https://wa.me/5524999599347?text=Olá! Quero saber mais sobre o cadastro SisGCorp para compra de munições." class="fixed-item" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <!-- ===== WHATSAPP COM MENSAGEM ATUALIZADA ===== -->
+    <a href="https://wa.me/5524999599347?text=Olá! Quero orientação da NeuroCombat Academy sobre o cadastro obrigatório no SisGCorp/SINARM 2026." class="fixed-item" target="_blank" rel="noopener" aria-label="WhatsApp">
         <i class="fab fa-whatsapp"></i>
         <span>WhatsApp</span>
     </a>
@@ -616,4 +698,4 @@
 <script src="../assets/js/main.js" defer></script>
 
 </body>
-  </html>
+</html>
