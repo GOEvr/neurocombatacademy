@@ -1434,4 +1434,129 @@ footer {
     .fixed-item i {
         font-size: 0.8rem;
     }
-       }
+}
+
+/* ============================================================
+   BANNER SISGCORP / SICOVEM (ADICIONADO)
+   ============================================================ */
+
+.sisgcorp-banner{
+    background:linear-gradient(90deg,#13243B,#0A1526);
+    border-top:1px solid rgba(212,175,55,.15);
+    border-bottom:1px solid rgba(212,175,55,.15);
+    padding:18px 0;
+}
+
+.sisgcorp-banner-content{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.sisgcorp-banner-icon{
+    width:58px;
+    height:58px;
+    flex-shrink:0;
+    border-radius:50%;
+    background:rgba(212,175,55,.12);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.sisgcorp-banner-icon i{
+    color:#D4AF37;
+    font-size:24px;
+}
+
+.sisgcorp-banner-tag{
+    color:#E87A2A;
+    font-size:.72rem;
+    font-weight:700;
+    letter-spacing:1.5px;
+    display:block;
+    margin-bottom:4px;
+}
+
+.sisgcorp-banner-text h3{
+    color:#F1F5F9;
+    margin-bottom:6px;
+    font-size:1.3rem;
+}
+
+.sisgcorp-banner-text p{
+    color:#94A3B8;
+    line-height:1.6;
+    font-size:.95rem;
+}
+
+.sisgcorp-banner-btn{
+    margin-left:auto;
+    flex-shrink:0;
+    background:#E87A2A;
+    color:#FFF;
+    text-decoration:none;
+    padding:14px 22px;
+    border-radius:50px;
+    font-weight:700;
+    transition:.3s;
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.sisgcorp-banner-btn:hover{
+    background:#C95A1A;
+    transform:translateY(-2px);
+}
+
+/* ============================================================
+   BANNER - BOTÃO FECHAR (ADICIONADO)
+   ============================================================ */
+
+.sisgcorp-banner-close{
+    background:none;
+    border:none;
+    color:#94A3B8;
+    font-size:18px;
+    cursor:pointer;
+    margin-left:10px;
+}
+
+.sisgcorp-banner-close:hover{
+    color:#FFF;
+}
+
+/* ============================================================
+   BANNER - RESPONSIVO (ADICIONADO)
+   ============================================================ */
+
+@media(max-width:768px){
+
+    .sisgcorp-banner-content{
+        flex-direction:column;
+        text-align:center;
+        align-items:flex-start;
+    }
+
+    .sisgcorp-banner-icon{
+        margin:0 auto;
+    }
+
+    .sisgcorp-banner-btn{
+        width:100%;
+        margin-top:12px;
+        margin-left:0;
+        justify-content:center;
+    }
+
+    .sisgcorp-banner-text{
+        text-align:center;
+    }
+
+    .sisgcorp-banner-close{
+        margin-left:0;
+        margin-top:8px;
+        align-self:center;
+    }
+}
