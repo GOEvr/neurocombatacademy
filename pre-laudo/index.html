@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes">
+    
+    <title>Programa Preparatório para obtenção do Laudo de Capacidade Técnica | NeuroCombat Academy</title>
+    
+    <meta name="description" content="Programa Preparatório da NeuroCombat Academy para candidatos à obtenção do Laudo de Capacidade Técnica exigido pela Polícia Federal. Diagnóstico inicial, trilha personalizada e metodologia exclusiva.">
+    
+    <meta name="keywords" content="laudo de capacidade técnica, pré-laudo, aptidão técnica, CRAF, certificado de registro de arma de fogo, avaliação teórica, avaliação prática, NeuroCombat, Programa Preparatório para obtenção do Laudo de Capacidade Técnica, Laudo de Capacidade Técnica Polícia Federal">
+    <meta name="author" content="Nésio Augusto Ferreira - NeuroCombat Academy">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <meta name="theme-color" content="#0A0F1E">
+    
+    <link rel="canonical" href="https://neurocombatacademy.com.br/pre-laudo/">
+    
+    <!-- ===== FAVICON ===== -->
+    <link rel="icon" href="assets/images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/images/favicon/apple-touch-icon.png">
+    
+    <!-- ===== MANIFEST ===== -->
+    <link rel="manifest" href="manifest.webmanifest">
+    
+    <!-- ===== GOOGLE ANALYTICS 4 (GA4) ===== -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JQQEFP0JNQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-JQQEFP0JNQ');
+    </script>
+    
+    <!-- ===== BIBLIOTECAS PARA PDF ===== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    
+    <!-- ===== CSS PRINCIPAL + PÁGINA PRÉ-LAUDO ===== -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/pre-laudo.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- ===== SCHEMA.ORG (JSON-LD) ===== -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Course",
+                "name": "Programa Preparatório para obtenção do Laudo de Capacidade Técnica",
+                "description": "Programa de preparação individual para obtenção do Laudo de Capacidade Técnica com diagnóstico personalizado, trilhas de preparação e metodologia exclusiva NeuroCombat.",
+                "provider": {
+                    "@type": "Organization",
+                    "name": "NeuroCombat Academy",
+                    "url": "https://neurocombatacademy.com.br/"
+                },
+                "instructor": {
+                    "@type": "Person",
+                    "name": "Nésio Augusto Ferreira",
+                    "jobTitle": "Instrutor de Armamento e Tiro | Especialista em Biomecânica e Psicofisiologia do Combate",
+                    "url": "https://neurocombatacademy.com.br/#sobre"
+                },
+                "hasCourseInstance": {
+                    "@type": "CourseInstance",
+                    "courseMode": "mixed",
+                    "courseWorkload": "PT40H"
+                },
+                "offers": {
+                    "@type": "Offer",
+                    "priceCurrency": "BRL",
+                    "description": "Consulte valores pelo WhatsApp"
+                }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Início",
+                        "item": "https://neurocombatacademy.com.br/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Programa Laudo de Capacidade Técnica",
+                        "item": "https://neurocombatacademy.com.br/pre-laudo/"
+                    }
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Preciso ter arma de fogo para participar?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Não. O programa é teórico-prático e não exige que o aluno possua arma de fogo."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Preciso fazer a Trilha Base obrigatoriamente?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Não. O diagnóstico inicial define a trilha ideal para cada aluno."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "O treinamento prático em estande é obrigatório?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Sim. Todos os participantes realizam treinamento prático em estande de tiro, simulando as etapas exigidas na avaliação."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "A NeuroCombat emite o Laudo?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Não. O programa prepara o candidato para a avaliação realizada por profissional habilitado."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Como faço para me inscrever?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Entre em contato conosco pelo WhatsApp para iniciar seu diagnóstico e receber seu plano de preparação individual."
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+    
+    <meta property="og:title" content="Programa Preparatório para obtenção do Laudo de Capacidade Técnica | NeuroCombat Academy">
+    <meta property="og:description" content="Programa Preparatório da NeuroCombat Academy para candidatos à obtenção do Laudo de Capacidade Técnica exigido pela Polícia Federal.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://neurocombatacademy.com.br/pre-laudo/">
+    <meta property="og:image" content="https://neurocombatacademy.com.br/assets/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Programa Preparatório para obtenção do Laudo de Capacidade Técnica | NeuroCombat Academy">
+    <meta name="twitter:description" content="Programa Preparatório da NeuroCombat Academy para candidatos à obtenção do Laudo de Capacidade Técnica.">
+    <meta name="twitter:image" content="https://neurocombatacademy.com.br/assets/images/og-image.jpg">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">⚡ Ciência · Técnica · Performance</div>
+
+<!-- HEADER -->
+<header class="header" id="header">
+    <div class="container">
+        <a href="/" class="logo-container">
+            <span class="logo-text">NEURO<span>COMBAT</span></span>
+            <span class="logo-sub">ACADEMY</span>
+        </a>
+        <nav class="nav-menu" aria-label="Menu principal">
+            <ul>
+                <li><a href="/#sobre">Sobre</a></li>
+                <li><a href="/pre-laudo/" class="active">Pré-Laudo</a></li>
+                <li><a href="/#depoimentos">Depoimentos</a></li>
+                <li><a href="/#faq">FAQ</a></li>
+            </ul>
+        </nav>
+        <a href="#cta" class="btn-header">Quero iniciar minha preparação</a>
+    </div>
+</header>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="container hero-grid">
+        <div class="hero-content">
+            <div class="hero-badge">🎯 Programa Oficial NeuroCombat Academy</div>
+            <h1 class="hero-title">Programa Preparatório para<br><span>obtenção do Laudo de Capacidade Técnica</span></h1>
+            <p class="hero-description">Capacitação completa para candidatos à obtenção do Laudo de Capacidade Técnica exigido pela Polícia Federal, com metodologia NeuroCombat baseada em neurociência, fatores humanos e treinamento personalizado.</p>
+            <div class="hero-stats">
+                <div class="stat-item"><span class="stat-number">40h</span><span class="stat-label">Carga horária</span></div>
+                <div class="stat-item"><span class="stat-number">📚</span><span class="stat-label">Apostila exclusiva</span></div>
+                <div class="stat-item"><span class="stat-number">🎯</span><span class="stat-label">Treinamento em estande</span></div>
+            </div>
+            <a href="#cta" class="cta-button-primary"><i class="fab fa-whatsapp"></i> FALAR COM ESPECIALISTA</a>
+            <div class="hero-trust">
+                <span>✅ Todos os níveis com treinamento em estande</span>
+                <span>🤝 Acompanhamento até o dia da avaliação</span>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hero-shield">
+                <div class="shield-icon"><i class="fas fa-graduation-cap"></i></div>
+                <h3>Laudo de</h3><p>Capacidade Técnica</p>
+                <div class="shield-line"></div>
+                <span class="shield-tag">⚡ Metodologia NeuroCombat</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     BARRA DE INFORMAÇÕES
+     ============================================================ -->
+<section class="course-info-bar">
+    <div class="container">
+        <div class="info-grid">
+            <div class="info-item"><span class="info-icon"><i class="fas fa-clock"></i></span><div><span class="info-label">Carga horária</span><span class="info-value">40 horas</span></div></div>
+            <div class="info-item"><span class="info-icon"><i class="fas fa-laptop"></i></span><div><span class="info-label">Modalidade</span><span class="info-value">Híbrido (EAD + Presencial)</span></div></div>
+            <div class="info-item"><span class="info-icon"><i class="fas fa-users"></i></span><div><span class="info-label">Público</span><span class="info-value">CAC • Civis • Segurança Pública</span></div></div>
+            <div class="info-item"><span class="info-icon"><i class="fas fa-certificate"></i></span><div><span class="info-label">Certificado</span><span class="info-value">NeuroCombat Academy</span></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     BREADCRUMB
+     ============================================================ -->
+<div class="breadcrumb"><div class="container"><a href="/">Início</a><span class="separator">›</span><span class="current">Programa Laudo de Capacidade Técnica</span></div></div>
+
+<!-- ============================================================
+     O QUE É O PROGRAMA
+     ============================================================ -->
+<section class="section">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-image">
+                <div class="hero-shield" style="max-width:400px;margin:0 auto;">
+                    <div class="shield-icon"><i class="fas fa-file-alt" style="font-size:4rem;"></i></div>
+                    <h3>Programa</h3><p>Preparatório</p>
+                    <div class="shield-line"></div>
+                    <span class="shield-tag">📋 Avaliação teórica e prática</span>
+                </div>
+            </div>
+            <div class="about-content">
+                <span class="about-tag">🎯 O que é</span>
+                <h2>Programa Preparatório NeuroCombat</h2>
+                <p>O Programa Preparatório para obtenção do Laudo de Capacidade Técnica foi desenvolvido para preparar cada candidato de acordo com seu nível de conhecimento e experiência.</p>
+                <p>Em vez de oferecer um treinamento único para todos, a NeuroCombat Academy realiza um <strong>diagnóstico inicial</strong> e direciona o aluno para uma <strong>trilha personalizada de preparação</strong>.</p>
+                <div class="about-highlights">
+                    <div>✅ Diagnóstico inicial</div>
+                    <div>✅ Plano individual</div>
+                    <div>✅ Material exclusivo</div>
+                    <div>✅ Simulados</div>
+                    <div>✅ Acompanhamento até o dia da avaliação</div>
+                    <div>✅ Treinamento em estande</div>
+                </div>
+                <a href="#diagnostico" class="btn-secondary">Quero fazer o diagnóstico</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     DIFERENCIAIS NEUROCOMBAT
+     ============================================================ -->
+<section class="section section-alt" id="diferenciais">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">🧠 Diferencial NeuroCombat</span>
+            <h2 class="section-title">Metodologia, Preparação e <span class="highlight">Acompanhamento</span></h2>
+            <p class="section-sub">Três pilares que fazem a diferença na sua preparação</p>
+        </div>
+        <div class="diferenciais-grid">
+            <div class="diferencial-item"><span class="diferencial-icon">🧠</span><h4>Metodologia</h4><p>Baseada em Neurociência e Fatores Humanos, com conteúdo desenvolvido a partir de evidências científicas e experiência operacional real.</p></div>
+            <div class="diferencial-item"><span class="diferencial-icon">📚</span><h4>Preparação</h4><p>Treinamento teórico e prático alinhado à avaliação da Polícia Federal, com apostila exclusiva, simulados e treinamento em estande.</p></div>
+            <div class="diferencial-item"><span class="diferencial-icon">🤝</span><h4>Acompanhamento</h4><p>Suporte individual até o dia da avaliação, com correção personalizada e orientação final para garantir sua preparação completa.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     COMO FUNCIONA A PREPARAÇÃO
+     ============================================================ -->
+<section class="section" id="fluxo">
+    <div class="container">
+        <div class="section-header"><span class="section-badge">📋 Jornada do Aluno</span><h2 class="section-title">Como funciona a <span class="highlight">preparação</span></h2><p class="section-sub">Acompanhe cada etapa da sua jornada até o dia da avaliação</p></div>
+        <div class="fluxo-grid">
+            <div class="fluxo-item"><div class="fluxo-num">1</div><h4>Diagnóstico Inicial</h4><p>Identificamos seu nível de conhecimento e experiência</p></div>
+            <div class="fluxo-item"><div class="fluxo-num">2</div><h4>Definição da Trilha</h4><p>Base, Técnica ou Aprovação Assistida</p></div>
+            <div class="fluxo-item"><div class="fluxo-num">3</div><h4>Conteúdo EAD</h4><p>Apostila, videoaulas, simulados e acompanhamento</p></div>
+            <div class="fluxo-item"><div class="fluxo-num">4</div><h4>Treinamento Prático</h4><p>Treino seco e treinamento em estande</p></div>
+            <div class="fluxo-item"><div class="fluxo-num">5</div><h4>Simulação Oficial</h4><p>Checklist final e preparação para o dia da avaliação</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     PARA QUEM É ESTE PROGRAMA?
+     ============================================================ -->
+<section class="section section-alt" id="publico">
+    <div class="container">
+        <h2 class="section-title">Para quem é este <span class="highlight">programa</span>?</h2>
+        <p class="section-sub">O Programa Preparatório atende candidatos que precisam demonstrar capacidade técnica perante profissional credenciado pela Polícia Federal.</p>
+        <div class="audience-grid">
+            <div class="audience-item"><i class="fas fa-circle"></i><span><strong>Pessoas que desejam adquirir arma de fogo pela primeira vez</strong> (posse ou porte, conforme os requisitos legais)</span></div>
+            <div class="audience-item"><i class="fas fa-circle"></i><span><strong>CACs</strong> — obtenção do Certificado de Registro (CR)</span></div>
+            <div class="audience-item"><i class="fas fa-circle"></i><span><strong>CACs</strong> — renovação do Certificado de Registro (CR)</span></div>
+            <div class="audience-item"><i class="fas fa-circle"></i><span><strong>Renovação do CRAF</strong> ou demais situações em que seja necessária nova comprovação da capacidade técnica</span></div>
+            <div class="audience-item"><i class="fas fa-circle"></i><span><strong>Profissionais da segurança pública ou privada</strong> que desejam atualização técnica</span></div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     COMO É A AVALIAÇÃO DA POLÍCIA FEDERAL
+     ============================================================ -->
+<section class="section" id="avaliacao-pf">
+    <div class="container">
+        <div class="section-header"><span class="section-badge">📋 Avaliação da Polícia Federal</span><h2 class="section-title">Como é a <span class="highlight">avaliação</span>?</h2><p class="section-sub">O candidato deve ser avaliado em dois aspectos para obter o Laudo de Capacidade Técnica</p></div>
+        <div class="avaliacao-grid">
+            <div class="avaliacao-card"><h3>📖 Avaliação Teórica</h3><ul><li><i class="fas fa-check-circle"></i> Segurança no manuseio</li><li><i class="fas fa-check-circle"></i> Legislação aplicada</li><li><i class="fas fa-check-circle"></i> Funcionamento da arma</li><li><i class="fas fa-check-circle"></i> Nomenclatura</li><li><i class="fas fa-check-circle"></i> Munições</li><li><i class="fas fa-check-circle"></i> Procedimentos operacionais</li></ul></div>
+            <div class="avaliacao-card"><h3>🎯 Avaliação Prática</h3><ul><li><i class="fas fa-check-circle"></i> Manuseio seguro da arma</li><li><i class="fas fa-check-circle"></i> Alimentação da arma</li><li><i class="fas fa-check-circle"></i> Carregamento e descarregamento</li><li><i class="fas fa-check-circle"></i> Disparos em alvo conforme critérios do avaliador</li><li><i class="fas fa-check-circle"></i> Correção de postura e empunhadura</li><li><i class="fas fa-check-circle"></i> Simulação das etapas exigidas na avaliação</li></ul></div>
+        </div>
+        <div style="text-align:center;margin-top:30px;"><p style="color:var(--text-muted);font-size:1.1rem;">✔️ Aprovação em ambas as etapas = <strong style="color:var(--orange);">Laudo de Capacidade Técnica</strong></p></div>
+    </div>
+</section>
+
+<!-- ============================================================
+     CONTEÚDO DA APOSTILA — 7 MÓDULOS
+     ============================================================ -->
+<section class="section section-alt" id="modulos">
+    <div class="container">
+        <div class="section-header"><span class="section-badge">📚 Conteúdo Oficial</span><h2 class="section-title">7 módulos da <span class="highlight">apostila</span></h2><p class="section-sub">Material completo desenvolvido pela NeuroCombat Academy</p></div>
+        <div class="modulos-grid">
+            <div class="modulo-item"><span class="modulo-num">01</span><span>Módulo 1 — Legislação Aplicada</span></div>
+            <div class="modulo-item"><span class="modulo-num">02</span><span>Módulo 2 — Segurança no Manuseio</span></div>
+            <div class="modulo-item"><span class="modulo-num">03</span><span>Módulo 3 — Partes e Funcionamento das Armas</span></div>
+            <div class="modulo-item"><span class="modulo-num">04</span><span>Módulo 4 — Munições e Fundamentos do Tiro</span></div>
+            <div class="modulo-item"><span class="modulo-num">05</span><span>Módulo 5 — Procedimentos da Avaliação Prática</span></div>
+            <div class="modulo-item"><span class="modulo-num">06</span><span>Módulo 6 — Treinamento em Estande</span></div>
+            <div class="modulo-item"><span class="modulo-num">07</span><span>Módulo 7 — Simulados e Checklist Final</span></div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     TRANSPARÊNCIA DO PROGRAMA
+     ============================================================ -->
+<section class="section" id="transparencia">
+    <div class="container">
+        <div class="transparencia-box">
+            <h4>📋 Transparência do programa</h4>
+            <ul>
+                <li><i class="fas fa-info-circle"></i> O programa prepara o candidato para a avaliação, mas <strong>NÃO emite o Laudo de Capacidade Técnica</strong>.</li>
+                <li><i class="fas fa-info-circle"></i> <strong>NÃO garante aprovação automática</strong> — o resultado depende do desempenho do candidato no dia da avaliação.</li>
+                <li><i class="fas fa-info-circle"></i> A avaliação é realizada por <strong>profissional credenciado pela Polícia Federal</strong>, independente da NeuroCombat Academy.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     DIAGNÓSTICO INICIAL NEUROCOMBAT (INTERATIVO)
+     ============================================================ -->
+<section class="section section-alt" id="diagnostico">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">🧠 EXCLUSIVO NEUROCOMBAT</span>
+            <h2 class="section-title">Diagnóstico <span class="highlight">Inicial NeuroCombat</span></h2>
+            <p class="section-sub">Antes de iniciar qualquer preparação, você passa por um diagnóstico completo</p>
+        </div>
+        
+        <div class="diagnostico-container" id="diagnosticoApp">
+            <div class="diagnostico-progress">
+                <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+                <div class="progress-text"><span id="progressQuestion">Pergunta 1 de 20</span><span id="progressPercent">0%</span></div>
+            </div>
+            
+            <div id="diagnosticoPerguntas"></div>
+            
+            <div class="diagnostico-navegacao">
+                <button class="btn-diagnostico secondary" id="btnAnterior" style="display:none;">‹ Anterior</button>
+                <button class="btn-diagnostico primary" id="btnProximo">Próxima ›</button>
+                <button class="btn-diagnostico primary" id="btnVerResultado" style="display:none;">Ver Resultado</button>
+            </div>
+            
+            <div id="diagnosticoResultado" style="display:none;"></div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     TRILHAS DE PREPARAÇÃO (3 TRILHAS)
+     ============================================================ -->
+<section class="section" id="trilhas">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">🎯 Metodologia NeuroCombat</span>
+            <h2 class="section-title">Trilhas de <span class="highlight">preparação</span></h2>
+            <p class="section-sub">Todos os participantes realizam treinamento prático em estande de tiro, simulando as etapas exigidas na avaliação para obtenção do Laudo de Capacidade Técnica.</p>
+            <p style="color:var(--text-muted);font-size:0.95rem;max-width:600px;margin:0 auto;">O que muda entre as trilhas é a <strong>intensidade da preparação</strong> — da maior carga teórica e prática até o treinamento mais individualizado.</p>
+        </div>
+        <div class="trilhas-grid">
+            <div class="trilha-card">
+                <span class="trilha-badge base">🟠 Trilha Base</span>
+                <h3>Preparação Fundamental</h3>
+                <p class="trilha-sub">Quem está começando do zero ou possui pouco conhecimento</p>
+                <div class="trilha-perfil">👤 Construir toda a base necessária para chegar com segurança à avaliação</div>
+                <ul>
+                    <li><i class="fas fa-check"></i> Legislação aplicada</li>
+                    <li><i class="fas fa-check"></i> Segurança no manuseio</li>
+                    <li><i class="fas fa-check"></i> Funcionamento e nomenclatura</li>
+                    <li><i class="fas fa-check"></i> Munições</li>
+                    <li><i class="fas fa-check"></i> Treino seco guiado</li>
+                    <li><i class="fas fa-check"></i> Simulados teóricos</li>
+                    <li><i class="fas fa-check"></i> Treinamento em estande</li>
+                    <li><i class="fas fa-check"></i> Simulação da prova prática</li>
+                </ul>
+                <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;">
+                    <span class="trilha-estande">🔫 Inclui treinamento em estande</span>
+                    <span class="trilha-carga">⏱️ Até 40 horas de preparação</span>
+                </div>
+                <div class="trilha-modalidade">📱 Modalidade: Híbrido (EAD + Presencial)</div>
+            </div>
+            <div class="trilha-card">
+                <span class="trilha-badge tecnica">🟡 Trilha Técnica</span>
+                <h3>Preparação Técnica</h3>
+                <p class="trilha-sub">Já possui conhecimento básico, já estudou ou já frequentou estande</p>
+                <div class="trilha-perfil">👤 Corrigir erros e consolidar técnica</div>
+                <ul>
+                    <li><i class="fas fa-check"></i> Diagnóstico inicial</li>
+                    <li><i class="fas fa-check"></i> Revisão direcionada</li>
+                    <li><i class="fas fa-check"></i> Treino seco corretivo</li>
+                    <li><i class="fas fa-check"></i> Simulados completos</li>
+                    <li><i class="fas fa-check"></i> Treinamento em estande</li>
+                    <li><i class="fas fa-check"></i> Correção individual dos disparos</li>
+                    <li><i class="fas fa-check"></i> Simulação oficial</li>
+                </ul>
+                <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;">
+                    <span class="trilha-estande">🔫 Inclui treinamento em estande</span>
+                    <span class="trilha-carga">⏱️ Carga definida pelo diagnóstico</span>
+                </div>
+                <div class="trilha-modalidade">💻 Modalidade: Híbrido</div>
+            </div>
+            <div class="trilha-card">
+                <span class="trilha-badge aprovacao">🔵 Trilha Aprovação Assistida</span>
+                <h3>Preparação Individualizada</h3>
+                <p class="trilha-sub">Já demonstra domínio dos fundamentos</p>
+                <div class="trilha-perfil">👤 Refinar desempenho para a avaliação</div>
+                <ul>
+                    <li><i class="fas fa-check"></i> Diagnóstico completo</li>
+                    <li><i class="fas fa-check"></i> Plano personalizado</li>
+                    <li><i class="fas fa-check"></i> Treino seco específico</li>
+                    <li><i class="fas fa-check"></i> Treinamento em estande</li>
+                    <li><i class="fas fa-check"></i> Correção técnica individual</li>
+                    <li><i class="fas fa-check"></i> Simulação oficial da avaliação</li>
+                    <li><i class="fas fa-check"></i> Acompanhamento até o dia do exame</li>
+                </ul>
+                <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;">
+                    <span class="trilha-estande">🔫 Inclui treinamento em estande</span>
+                    <span class="trilha-carga">⏱️ Treinamento individual com carga personalizada</span>
+                </div>
+                <div class="trilha-modalidade">🏛️ Modalidade: Presencial + suporte online</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     TABELA COMPARATIVA DAS TRILHAS
+     ============================================================ -->
+<section class="section section-alt">
+    <div class="container">
+        <h2 class="section-title">Comparativo das <span class="highlight">trilhas</span></h2>
+        <p class="section-sub">Todos os alunos aprendem o conteúdo necessário para a avaliação. O que muda é a quantidade de treinamento necessária para atingir o padrão de aprovação.</p>
+        <table class="tabela-trilhas">
+            <thead><tr><th>Item</th><th>🟠 Trilha Base</th><th>🟡 Trilha Técnica</th><th>🔵 Aprovação Assistida</th></tr></thead>
+            <tbody>
+                <tr><td><strong>Diagnóstico</strong></td><td><span class="check">✅</span></td><td><span class="check">✅</span></td><td><span class="check">✅</span></td></tr>
+                <tr><td><strong>Apostila EAD</strong></td><td><span class="check">✅</span></td><td><span class="check">✅</span></td><td><span class="check">✅</span></td></tr>
+                <tr><td><strong>Treino seco</strong></td><td>Completo</td><td>Direcionado</td><td>Personalizado</td></tr>
+                <tr><td><strong>Treinamento em estande</strong></td><td><span class="check">✅</span></td><td><span class="check">✅</span></td><td><span class="check">✅</span></td></tr>
+                <tr><td><strong>Simulação oficial</strong></td><td><span class="check">✅</span></td><td><span class="check">✅</span></td><td><span class="check">✅</span></td></tr>
+                <tr><td><strong>Suporte até a avaliação</strong></td><td><span class="check">✅</span></td><td><span class="check">✅</span></td><td><span class="check">✅</span></td></tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- ============================================================
+     O QUE O ALUNO RECEBE
+     ============================================================ -->
+<section class="section" id="recebe">
+    <div class="container">
+        <div class="section-header"><span class="section-badge">📦 Incluso no Programa</span><h2 class="section-title">O que você <span class="highlight">recebe</span></h2><p class="section-sub">Tudo que você precisa para se preparar com confiança</p></div>
+        <div class="recebe-grid">
+            <div class="recebe-item"><i class="fas fa-book-open"></i><h4>Apostila Oficial NeuroCombat</h4><p>Material completo com 7 módulos: legislação, partes da arma, segurança, fundamentos e simulados.</p></div>
+            <div class="recebe-item"><i class="fas fa-video"></i><h4>Aulas EAD</h4><p>Videoaulas e conteúdo teórico disponível online para estudo no seu ritmo.</p></div>
+            <div class="recebe-item"><i class="fas fa-pencil-alt"></i><h4>Banco de Questões</h4><p>Simulados com 20 questões estilo avaliação oficial com gabarito comentado.</p></div>
+            <div class="recebe-item"><i class="fas fa-crosshairs"></i><h4>Treino Seco Guiado</h4><p>Exercícios práticos para desenvolver técnica e segurança sem consumo de munição.</p></div>
+            <div class="recebe-item"><i class="fas fa-building"></i><h4>Treinamento em Estande</h4><p>Aplicação prática supervisionada com instrutores qualificados.</p></div>
+            <div class="recebe-item"><i class="fas fa-chart-bar"></i><h4>Diagnóstico NeuroCombat</h4><p>Avaliação inicial para identificar seu nível e direcionar a preparação.</p></div>
+            <div class="recebe-item"><i class="fas fa-user-check"></i><h4>Plano Individual de Preparação</h4><p>Cada aluno recebe um plano personalizado com base no diagnóstico.</p></div>
+            <div class="recebe-item"><i class="fas fa-award"></i><h4>Certificado NeuroCombat</h4><p>Certificado de conclusão do treinamento reconhecido pela Academy.</p></div>
+            <div class="recebe-item"><i class="fab fa-whatsapp"></i><h4>Suporte via WhatsApp</h4><p>Acompanhamento exclusivo para tirar todas as suas dúvidas.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     QUEM SOMOS
+     ============================================================ -->
+<section class="section section-alt" id="quem-somos">
+    <div class="container">
+        <div class="quem-somos-grid">
+            <div class="quem-somos-text">
+                <span class="section-badge">🏛️ NeuroCombat Academy</span>
+                <h3>Instituição especializada em <span class="highlight">treinamento</span></h3>
+                <p>A NeuroCombat Academy é uma instituição especializada em treinamento baseado em neurociência, fatores humanos e desempenho operacional.</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Metodologia própria baseada em evidências científicas</li>
+                    <li><i class="fas fa-check-circle"></i> Formação presencial e EAD para diferentes perfis</li>
+                    <li><i class="fas fa-check-circle"></i> Cursos para civis, CACs e profissionais de segurança</li>
+                    <li><i class="fas fa-check-circle"></i> Acompanhamento individual até o dia da avaliação</li>
+                </ul>
+            </div>
+            <div class="about-image">
+                <div class="hero-shield" style="max-width:100%;margin:0 auto;">
+                    <div class="shield-icon"><i class="fas fa-brain" style="font-size:4rem;"></i></div>
+                    <h3>NeuroCombat</h3><p>Academy</p>
+                    <div class="shield-line"></div>
+                    <span class="shield-tag">⚡ Ciência · Técnica · Performance</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     GARANTIA NEUROCOMBAT
+     ============================================================ -->
+<section class="section" id="garantia">
+    <div class="container">
+        <div class="garantia-box">
+            <span class="garantia-badge">🤝 Garantia NeuroCombat</span>
+            <h3>O aluno é acompanhado até o dia da <span style="color:var(--orange);">avaliação</span></h3>
+            <p>Diferente dos preparatórios comuns, a NeuroCombat Academy não abandona o aluno após o treinamento. Oferecemos <strong>acompanhamento contínuo até o dia da avaliação de capacidade técnica</strong>, com suporte para dúvidas, revisão de conteúdo e orientação final.</p>
+            <a href="#cta" class="btn-secondary">Quero essa preparação completa</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     DEPOIMENTOS
+     ============================================================ -->
+<section class="section section-alt" id="depoimentos">
+    <div class="container">
+        <h2 class="section-title">Quem já <span class="highlight">vivenciou</span></h2>
+        <p class="section-sub">O que profissionais dizem sobre o Programa NeuroCombat</p>
+        <div class="depoimentos-grid">
+            <div class="depoimento-card"><div class="stars">⭐⭐⭐⭐⭐</div><p>"O programa da NeuroCombat foi essencial para minha aprovação. Material completo e didático."</p><div class="depoimento-autor"><strong>Carlos</strong><span>Guarda Municipal</span></div></div>
+            <div class="depoimento-card"><div class="stars">⭐⭐⭐⭐⭐</div><p>"O treinamento prático fez toda a diferença. Cheguei confiante para a avaliação."</p><div class="depoimento-autor"><strong>João</strong><span>CAC</span></div></div>
+            <div class="depoimento-card"><div class="stars">⭐⭐⭐⭐⭐</div><p>"A metodologia é diferenciada. Aprendi muito mais do que em outros preparatórios que já fiz."</p><div class="depoimento-autor"><strong>Pedro</strong><span>Empresário</span></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     FAQ
+     ============================================================ -->
+<section class="section" id="faq">
+    <div class="container">
+        <h2 class="section-title">Perguntas <span class="highlight">Frequentes</span></h2>
+        <div class="faq-grid">
+            <div class="faq-item"><div class="faq-question">Preciso ter arma de fogo para participar?</div><div class="faq-answer">Não. O programa é teórico-prático e não exige que o aluno possua arma de fogo.</div></div>
+            <div class="faq-item"><div class="faq-question">Preciso fazer a Trilha Base obrigatoriamente?</div><div class="faq-answer">Não. O diagnóstico inicial define a trilha ideal para cada aluno.</div></div>
+            <div class="faq-item"><div class="faq-question">O treinamento prático em estande é obrigatório?</div><div class="faq-answer">Sim. Todos os participantes realizam treinamento prático em estande de tiro, simulando as etapas exigidas na avaliação.</div></div>
+            <div class="faq-item"><div class="faq-question">A NeuroCombat emite o Laudo?</div><div class="faq-answer">Não. O programa prepara o candidato para a avaliação realizada por profissional habilitado.</div></div>
+            <div class="faq-item"><div class="faq-question">Como faço para me inscrever?</div><div class="faq-answer">Entre em contato conosco pelo WhatsApp para iniciar seu diagnóstico e receber seu plano de preparação individual.</div></div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     PRÓXIMA ETAPA: DRY FIRE
+     ============================================================ -->
+<section class="section" id="dryfire">
+    <div class="container">
+        <div class="dryfire-box">
+            <span class="dryfire-badge">🚀 Próxima etapa da sua evolução</span>
+            <h3>NeuroTáticas <span style="color:var(--orange);">Dry Fire</span></h3>
+            <p>Depois da aprovação no Laudo de Capacidade Técnica, o aluno pode evoluir para o <strong>Programa NeuroTáticas Dry Fire</strong>, voltado ao desenvolvimento contínuo da técnica, precisão e tomada de decisão.</p>
+            <a href="https://wa.me/5524999599347?text=Olá! Quero entrar na lista de espera do Dry Fire." class="btn-secondary" target="_blank" rel="noopener">Entrar na Lista de Espera</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     CTA FINAL
+     ============================================================ -->
+<section class="cta-final" id="cta">
+    <div class="container">
+        <span class="cta-badge">🎯 Preparação Personalizada</span>
+        <h2>Inicie sua <span class="highlight">preparação personalizada</span></h2>
+        <p>Faça seu diagnóstico inicial e descubra a trilha ideal para sua aprovação no Laudo de Capacidade Técnica.</p>
+        <a href="https://wa.me/5524999599347?text=Olá! Quero iniciar minha preparação para o Laudo de Capacidade Técnica da NeuroCombat Academy." class="cta-button-primary" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> QUERO INICIAR MINHA PREPARAÇÃO</a>
+        <div class="cta-trust">
+            <span><i class="fas fa-headset"></i> Suporte exclusivo</span>
+            <span><i class="fas fa-flask"></i> Metodologia própria</span>
+            <span><i class="fas fa-shield-alt"></i> Treinamento em estande</span>
+            <span><i class="fas fa-handshake"></i> Acompanhamento até a avaliação</span>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <span class="footer-logo">NEURO<span>COMBAT</span></span>
+                <span class="footer-sub">ACADEMY</span>
+                <p>Metodologia própria que integra neurociência, fatores humanos e experiência operacional para desenvolver profissionais preparados para ambientes críticos.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Links rápidos</h4>
+                <ul>
+                    <li><a href="/#sobre">Sobre</a></li>
+                    <li><a href="/pre-laudo/">Pré-Laudo</a></li>
+                    <li><a href="/#depoimentos">Depoimentos</a></li>
+                    <li><a href="/#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Redes sociais</h4>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/neurocombatacademy/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/5524999599347?text=Olá! Quero conhecer a metodologia da NeuroCombat Academy." target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 NeuroCombat Academy. Todos os direitos reservados.</p>
+            <p>Metodologia NeuroCombat · Nésio Augusto Ferreira</p>
+        </div>
+    </div>
+</footer>
+
+<!-- BARRA FIXA -->
+<div class="fixed-bar">
+    <a href="https://wa.me/5524999599347?text=Olá! Quero iniciar minha preparação para o Laudo de Capacidade Técnica da NeuroCombat Academy." class="fixed-item" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i><span>WhatsApp</span></a>
+    <a href="#cta" class="fixed-item highlight" aria-label="Conhecer"><i class="fas fa-rocket"></i><span>Conhecer</span></a>
+    <a href="#home" class="fixed-item" aria-label="Voltar ao topo"><i class="fas fa-arrow-up"></i><span>Topo</span></a>
+</div>
+
+<script src="assets/js/pre-laudo.js" defer></script>
+
+</body>
+</html>
