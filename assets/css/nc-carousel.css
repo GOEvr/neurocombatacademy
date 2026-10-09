@@ -24,3 +24,25 @@
 @media(max-width:992px){.nc-carousel{--nc-visible:2;--nc-gap:20px}}
 @media(max-width:600px){.nc-carousel{--nc-visible:1;--nc-gap:16px}.nc-carousel-toolbar{align-items:center}.nc-carousel-arrow{width:40px;height:40px}.nc-carousel .nc-slide .curso-info{padding:18px 20px 22px}.nc-carousel .nc-slide .curso-info h3{font-size:1.35rem}.nc-carousel .nc-slide .curso-info p{font-size:.9rem}.nc-carousel-footer{align-items:flex-start}.nc-carousel-hint{font-size:.7rem}}
 @media(prefers-reduced-motion:reduce){.nc-carousel-viewport{scroll-behavior:auto}.nc-carousel-arrow,.nc-carousel-dots button{transition:none}}
+
+
+/* Diagnóstico visual discreto caso um arquivo de imagem falhe ao carregar. */
+.nc-carousel .curso-image.nc-image-missing {
+  background: radial-gradient(circle at 50% 35%, #263653 0%, #0A0F1E 75%);
+}
+.nc-carousel .curso-image.nc-image-missing::before {
+  content: 'NEUROCOMBAT ACADEMY';
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: rgba(241,245,249,.75);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: .12em;
+  text-align: center;
+  z-index: 1;
+}
+.nc-carousel .curso-image.nc-image-missing img { display: none; }
